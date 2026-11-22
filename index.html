@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="vi" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="BÀI TẬP VỀ NHÀ – NGÀY 22/11/2026" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>BÀI TẬP VỀ NHÀ – NGÀY 22/11/2026</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <!-- MATHJAX 3 - KHAI BÁO MACROS WIDEPAREN VÀ OVERSET DỰNG CUNG TRÒN CHUẨN XÁC -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true,
+        macros: {
+          wideparen: ['\\overset{\\frown}{#1}', 1],
+          widearc: ['\\overset{\\frown}{#1}', 1],
+          cung: ['\\overset{\\frown}{#1}', 1]
+        }
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root, body[data-theme="cyber"] {
+      --bg-main: #020617; --text-main: #f8fafc; --text-muted: #94a3b8;
+      --card-bg: rgba(15, 23, 42, 0.88); --card-border: rgba(255, 255, 255, 0.14);
+      --box-bg: rgba(30, 41, 59, 0.72); --box-border: rgba(255, 255, 255, 0.12);
+      --math-color: #38bdf8;
+      --ext-tomtat-hdr-bg: #80cbd4; --ext-tomtat-hdr-txt: #064e3b; --ext-tomtat-body-bg: rgba(178, 223, 219, 0.12); --ext-tomtat-border: #4db6ac;
+      --ext-dn-hdr-bg: #b3d4ff; --ext-dn-hdr-txt: #1e3a8a; --ext-dn-body-bg: rgba(219, 234, 254, 0.12); --ext-dn-border: #93c5fd;
+      --ext-dl-hdr-bg: #d8b4fe; --ext-dl-hdr-txt: #581c87; --ext-dl-body-bg: rgba(243, 232, 255, 0.12); --ext-dl-border: #c084fc;
+      --ext-cy-hdr-bg: #fca5a5; --ext-cy-hdr-txt: #7f1d1d; --ext-cy-body-bg: rgba(254, 226, 226, 0.12); --ext-cy-border: #f87171;
+    }
+    body[data-theme="aurora"] {
+      --bg-main: #0d0722; --text-main: #fae8ff; --text-muted: #c084fc;
+      --card-bg: rgba(24, 15, 52, 0.88); --card-border: rgba(217, 70, 239, 0.28);
+      --box-bg: rgba(45, 26, 84, 0.72); --box-border: rgba(217, 70, 239, 0.25);
+      --math-color: #60a5fa;
+      --ext-tomtat-hdr-bg: #2dd4bf; --ext-tomtat-hdr-txt: #042f2e; --ext-tomtat-body-bg: rgba(45, 212, 191, 0.12); --ext-tomtat-border: #14b8a6;
+      --ext-dn-hdr-bg: #60a5fa; --ext-dn-hdr-txt: #0f172a; --ext-dn-body-bg: rgba(96, 165, 250, 0.12); --ext-dn-border: #3b82f6;
+      --ext-dl-hdr-bg: #c084fc; --ext-dl-hdr-txt: #2e1065; --ext-dl-body-bg: rgba(192, 132, 252, 0.12); --ext-dl-border: #a855f7;
+      --ext-cy-hdr-bg: #f87171; --ext-cy-hdr-txt: #450a0a; --ext-cy-body-bg: rgba(248, 113, 113, 0.12); --ext-cy-border: #ef4444;
+    }
+    body[data-theme="pearl"] {
+      --bg-main: #f1f5f9; --text-main: #0f172a; --text-muted: #475569;
+      --card-bg: rgba(255, 255, 255, 0.96); --card-border: rgba(203, 213, 225, 0.85);
+      --box-bg: rgba(248, 250, 252, 0.95); --box-border: rgba(203, 213, 225, 0.85);
+      --math-color: #1d4ed8;
+      --ext-tomtat-hdr-bg: #80cbd4; --ext-tomtat-hdr-txt: #043927; --ext-tomtat-body-bg: #e0f2f1; --ext-tomtat-border: #4db6ac;
+      --ext-dn-hdr-bg: #b3d4ff; --ext-dn-hdr-txt: #1e3a8a; --ext-dn-body-bg: #edf5ff; --ext-dn-border: #93c5fd;
+      --ext-dl-hdr-bg: #d8b4fe; --ext-dl-hdr-txt: #4c1d95; --ext-dl-body-bg: #f5edff; --ext-dl-border: #c084fc;
+      --ext-cy-hdr-bg: #ffcbd1; --ext-cy-hdr-txt: #881337; --ext-cy-body-bg: #fff0f3; --ext-cy-border: #fda4af;
+    }
+
+    * {
+      -webkit-tap-highlight-color: transparent;
+      box-sizing: border-box;
+    }
+
+    /* KHÓA KHUNG NGOÀI CỐ ĐỊNH 100DVH CHỐNG LỖI RUBBER-BAND & THANH ĐỊA CHỈ SAFARI IPHONE/IPAD */
+    html, body {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100vh;
+      height: 100dvh;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      overscroll-behavior: none;
+    }
+
+    body {
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+      transition: background-color 0.25s ease, color 0.25s ease;
+    }
+
+    /* HỖ TRỢ TAI THỎ / DYNAMIC ISLAND / HOME INDICATOR TRÊN MỌI IPHONE & IPAD */
+    .safe-header {
+      padding-top: max(0.4rem, env(safe-area-inset-top));
+      padding-left: max(0.5rem, env(safe-area-inset-left));
+      padding-right: max(0.5rem, env(safe-area-inset-right));
+    }
+    .safe-main {
+      padding-left: max(0.35rem, env(safe-area-inset-left));
+      padding-right: max(0.35rem, env(safe-area-inset-right));
+      padding-bottom: max(0.35rem, env(safe-area-inset-bottom));
+    }
+    .safe-drawer {
+      padding-top: max(0.75rem, env(safe-area-inset-top));
+      padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+      padding-right: max(0.75rem, env(safe-area-inset-right));
+    }
+
+    /* CHẾ ĐỘ TOÀN MÀN HÌNH TẬP TRUNG CHO IPHONE / ZALO / MESSENGER */
+    body.ios-focus-mode #app-header {
+      display: none !important;
+    }
+    body.ios-focus-mode #ios-exit-focus-btn {
+      display: inline-flex !important;
+    }
+
+    /* CUỘN MƯỢT CHUẨN NATIVE IOS MOMENTUM SCROLLING */
+    .ios-scroll {
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      overscroll-behavior-y: contain;
+    }
+
+    /* CHỐNG IPHONE/IPAD SAFARI TỰ ĐỘNG PHÓNG TO MÀN HÌNH KHI CHẠM VÀO Ô NHẬP LIỆU */
+    input.ios-input, textarea.ios-input, select.ios-input {
+      font-size: 16px !important;
+    }
+
+    /* MATHJAX 3: MÀU SẮC & CUỘN NGANG AN TOÀN CHO CÔNG THỨC DÀI TRÊN IPHONE */
+    mjx-container, mjx-container * {
+      color: var(--math-color) !important;
+      font-weight: bold;
+    }
+    mjx-container[display="true"] {
+      display: block !important;
+      max-width: 100% !important;
+      overflow-x: auto !important;
+      overflow-y: hidden !important;
+      -webkit-overflow-scrolling: touch;
+      padding: 4px 2px;
+      margin: 6px 0 !important;
+    }
+
+    .glass-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      -webkit-backdrop-filter: blur(16px);
+      backdrop-filter: blur(16px);
+    }
+    .box-bg {
+      background-color: var(--box-bg);
+      border: 1px solid var(--box-border);
+    }
+
+    /* CHUẨN APPLE HIG: VÙNG CHẠM TỐI THIỂU 44X44PT */
+    .btn-touch {
+      min-height: 40px;
+      min-width: 40px;
+      touch-action: manipulation;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    @media (min-width: 640px) {
+      .btn-touch { min-height: 44px; min-width: 44px; }
+    }
+
+    /* DANH SÁCH ENUMERATE PHÂN CẤP TỰ ĐỘNG (a), b) -> 1., 2. -> i), ii)) */
+    #slide-question ul, #slide-solution ul, .extest-box ul, #interactive-area ul {
+      list-style-type: disc !important;
+      margin-left: 1.5rem !important;
+      margin-top: 0.5rem !important;
+      margin-bottom: 0.5rem !important;
+    }
+    #slide-question ul ul, #slide-solution ul ul, .extest-box ul ul, #interactive-area ul ul {
+      list-style-type: circle !important;
+    }
+
+    /* DANH SÁCH NHÃN TÙY CHỈNH ex_test (\item[1.1], \item[1.2], ...) */
+    #slide-question ul.extest-custom-enum, #slide-solution ul.extest-custom-enum, .extest-box ul.extest-custom-enum {
+      list-style: none !important;
+      margin-left: 0.25rem !important;
+      padding-left: 0 !important;
+    }
+    ul.extest-custom-enum > li {
+      position: relative;
+      padding-left: 2.6rem !important;
+      margin-top: 0.45rem !important;
+      margin-bottom: 0.45rem !important;
+      line-height: 1.65 !important;
+    }
+    ul.extest-custom-enum > li > .enum-custom-lbl {
+      position: absolute;
+      left: 0.2rem;
+      top: 0;
+      font-weight: 800;
+      color: var(--math-color);
+    }
+
+    #slide-question ol, #slide-solution ol, .extest-box ol, #interactive-area ol {
+      list-style: none !important;
+      counter-reset: enum-level1;
+      padding-left: 0 !important;
+      margin-left: 0.25rem !important;
+      margin-top: 0.5rem !important;
+      margin-bottom: 0.5rem !important;
+    }
+    #slide-question ol > li, #slide-solution ol > li, .extest-box ol > li, #interactive-area ol > li {
+      counter-increment: enum-level1;
+      position: relative;
+      padding-left: 2.2rem !important;
+      margin-top: 0.35rem !important;
+      margin-bottom: 0.35rem !important;
+      line-height: 1.6 !important;
+    }
+    #slide-question ol > li::before, #slide-solution ol > li::before, .extest-box ol > li::before, #interactive-area ol > li::before {
+      content: counter(enum-level1, lower-alpha) ")";
+      font-weight: 800;
+      color: var(--math-color);
+      position: absolute;
+      left: 0.25rem;
+      top: 0;
+    }
+
+    #slide-question ol ol, #slide-solution ol ol, .extest-box ol ol, #interactive-area ol ol {
+      list-style: none !important;
+      counter-reset: enum-level2;
+      margin-left: 0.25rem !important;
+      margin-top: 0.4rem !important;
+      margin-bottom: 0.4rem !important;
+    }
+    #slide-question ol ol > li, #slide-solution ol ol > li, .extest-box ol ol > li, #interactive-area ol ol > li {
+      counter-increment: enum-level2;
+      position: relative;
+      padding-left: 2rem !important;
+      margin-top: 0.25rem !important;
+      margin-bottom: 0.25rem !important;
+    }
+    #slide-question ol ol > li::before, #slide-solution ol ol > li::before, .extest-box ol ol > li::before, #interactive-area ol ol > li::before {
+      content: counter(enum-level2, decimal) ".";
+      font-weight: 700;
+      color: var(--text-main);
+      position: absolute;
+      left: 0.25rem;
+      top: 0;
+    }
+
+    @media (max-width: 639px) {
+      #slide-question ul, #slide-solution ul, .extest-box ul, #interactive-area ul {
+        margin-left: 1.1rem !important;
+      }
+      #slide-question ol > li, #slide-solution ol > li, .extest-box ol > li, #interactive-area ol > li {
+        padding-left: 1.75rem !important;
+      }
+    }
+
+    /* ĐỊNH DẠNG BẢNG THỐNG KÊ (\begin{tabular}) CUỘN MƯỢT TRÊN IPHONE */
+    .table-scroll-wrap {
+      -webkit-overflow-scrolling: touch;
+    }
+    #slide-question table, #slide-solution table, .extest-box table {
+      border-collapse: collapse;
+      margin: 6px auto;
+      width: auto;
+      max-width: 100%;
+      font-size: 0.92em;
+      border: 1.5px solid rgba(148, 163, 184, 0.55);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    #slide-question th, #slide-question td,
+    #slide-solution th, #slide-solution td,
+    .extest-box th, .extest-box td {
+      border: 1px solid rgba(148, 163, 184, 0.45);
+      padding: 7px 12px;
+      text-align: center;
+      white-space: nowrap;
+    }
+    #slide-question tr:first-child th, #slide-question tr:first-child td,
+    #slide-solution tr:first-child th, #slide-solution tr:first-child td {
+      background: rgba(99, 102, 241, 0.16);
+      font-weight: 700;
+    }
+
+    /* STYLES MÔI TRƯỜNG EX_TEST & IMMINI */
+    .immini-box { margin: 8px 0; }
+    .extest-box { width: 100%; box-shadow: 0 4px 12px rgba(0,0,0,0.06); margin: 10px 0; border-radius: 12px; overflow: hidden; }
+    .extest-tomtat { border: 2px solid var(--ext-tomtat-border); background: var(--ext-tomtat-body-bg); }
+    .extest-tomtat-hdr { background: var(--ext-tomtat-hdr-bg); color: var(--ext-tomtat-hdr-txt); font-weight: 800; padding: 10px 16px; }
+
+    .extest-dn { border: 1.5px solid var(--ext-dn-border); background: var(--ext-dn-body-bg); }
+    .extest-dn-hdr { background: var(--ext-dn-hdr-bg); color: var(--ext-dn-hdr-txt); font-weight: 700; padding: 8px 14px; }
+
+    .extest-dl { border: 1.5px solid var(--ext-dl-border); background: var(--ext-dl-body-bg); }
+    .extest-dl-hdr { background: var(--ext-dl-hdr-bg); color: var(--ext-dl-hdr-txt); font-weight: 700; padding: 8px 14px; }
+
+    .extest-cy { border: 1.5px solid var(--ext-cy-border); background: var(--ext-cy-body-bg); }
+    .extest-cy-hdr { background: var(--ext-cy-hdr-bg); color: var(--ext-cy-hdr-txt); font-weight: 700; padding: 8px 14px; }
+
+    .extest-dang { border: 2px solid #2563eb; background: var(--card-bg); }
+    .extest-dang-hdr { background: linear-gradient(90deg, #1d4ed8, #2563eb); color: #fff; padding: 10px 16px; font-weight: 800; display: flex; align-items: center; gap: 8px; }
+    .extest-dang-pill { background: #fff; color: #1d4ed8; font-weight: 900; font-size: 0.8rem; padding: 3px 10px; border-radius: 99px; }
+
+    .extest-vd { border: 2px solid #60a5fa; background: var(--card-bg); padding: 14px; }
+    .extest-vd-pill { background: #2563eb; color: #fff; font-weight: 800; font-size: 0.8rem; padding: 4px 14px; border-radius: 99px; display: inline-flex; align-items: center; gap: 6px; }
+
+    /* HÌNH VẼ TIKZ & BIỂU ĐỒ CHUẨN VECTOR SAFARI IOS/IPADOS */
+    .tikz-container {
+      -webkit-overflow-scrolling: touch;
+    }
+    .tikz-container svg {
+      border-radius: 10px;
+      background: #ffffff;
+      padding: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.16);
+    }
+  </style>
+</head>
+<body class="flex flex-col justify-between" data-theme="cyber">
+
+  <!-- TOPBAR HEADER PROMAX RESPONSIVE (TỐI ƯU TAI THỎ IPHONE & IPAD) -->
+  <header id="app-header" class="glass-card border-b safe-header pb-2 sm:pb-2.5 flex items-center justify-between shrink-0 gap-1.5 sm:gap-2 z-30">
+    <div class="flex items-center gap-2 md:gap-3 min-w-0 flex-1">
+      <div class="hidden sm:flex w-10 h-10 rounded-xl bg-indigo-600 items-center justify-center font-black text-white text-lg shadow-lg shrink-0">⚡</div>
+      <div class="min-w-0">
+        <h1 class="hidden sm:block text-sm md:text-base font-black uppercase text-indigo-400 leading-tight truncate" id="hdr-exam-title">ĐỀ ÔN THI HỌC SINH GIỎI</h1>
+        <p class="text-[11px] sm:text-xs opacity-95 sm:opacity-80 font-extrabold sm:font-bold text-emerald-400 whitespace-nowrap truncate leading-tight" id="hdr-school-name">LỚP TOÁN 27 NGUYỄN ĐỨC CẢNH</p>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-1 sm:gap-2 shrink-0">
+      <!-- BỘ ĐẾM THỜI GIAN -->
+      <div class="flex items-center gap-1 sm:gap-1.5 px-2 sm:px-3 py-1.5 rounded-xl box-bg border border-amber-500/40 shadow">
+        <i class="fa-solid fa-clock text-amber-500 animate-pulse text-xs sm:text-sm"></i>
+        <span id="timer-display" class="font-mono text-xs sm:text-sm md:text-base font-black text-amber-500">90:00</span>
+      </div>
+
+      <!-- ACTION BUTTONS TINH GỌN (VÙNG CHẠM >= 40PX) -->
+      <button onclick="cycleTheme()" title="Đổi giao diện" aria-label="Đổi giao diện" class="btn-touch px-2.5 sm:px-3 py-1 rounded-xl text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/40 flex items-center justify-center gap-1 active:scale-95 transition-transform">
+        <span id="theme-btn-icon">🌙</span><span id="theme-btn-label" class="hidden md:inline">Cyber</span>
+      </button>
+      <button onclick="toggleTocDrawer()" title="Mục lục câu hỏi" aria-label="Mục lục câu hỏi" class="btn-touch px-2.5 sm:px-3 py-1 rounded-xl text-xs font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 flex items-center justify-center gap-1 active:scale-95 transition-transform">
+        <i class="fa-solid fa-list-check"></i> <span class="hidden sm:inline">Mục Lục</span>
+      </button>
+      <button onclick="toggleFullScreen()" id="btn-fullscreen" title="Phóng to / Thu nhỏ toàn màn hình" aria-label="Toàn màn hình" class="btn-touch px-2.5 sm:px-3 py-1 rounded-xl text-xs font-bold glass-card text-indigo-300 flex items-center justify-center gap-1 active:scale-95 transition-transform">
+        <i id="icon-fullscreen" class="fa-solid fa-expand text-xs sm:text-sm"></i> <span id="label-fullscreen" class="hidden lg:inline">Toàn màn hình</span>
+      </button>
+      <button onclick="showScoreModal()" title="Xem điểm" aria-label="Xem điểm" class="btn-touch px-2.5 sm:px-3 py-1 rounded-xl text-xs font-bold bg-amber-500/20 text-amber-500 border border-amber-500/40 flex items-center justify-center gap-1 active:scale-95 transition-transform">
+        <i class="fa-solid fa-trophy"></i> <span class="hidden sm:inline">Điểm</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MÀN HÌNH CHÍNH TRÌNH CHIẾU -->
+  <main class="flex-1 safe-main pt-1.5 sm:pt-3 md:pt-4 flex flex-col relative overflow-hidden min-h-0">
+    <div id="slide-card-container" class="glass-card rounded-2xl p-2.5 sm:p-4 md:p-5 flex-1 flex flex-col min-h-0 relative shadow-xl">
+      
+      <!-- THANH ĐIỀU HƯỚNG CÂU -->
+      <div class="flex items-center justify-between pb-2 sm:pb-3 border-b border-slate-700/50 mb-2 sm:mb-3 shrink-0 gap-1.5">
+        <div class="flex items-center gap-1.5 sm:gap-2 min-w-0">
+          <button onclick="toggleTocDrawer()" title="Mở nhanh Mục lục" class="px-2.5 sm:px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-black bg-indigo-600 text-white shadow-md whitespace-nowrap active:scale-95 transition-transform flex items-center gap-1.5">
+            <span id="slide-num-badge">CÂU 1</span>
+            <i class="fa-solid fa-caret-down text-[10px] opacity-80"></i>
+          </button>
+          <span id="slide-type-badge" class="px-2 sm:px-2.5 py-1 rounded-xl text-[11px] sm:text-xs font-bold box-bg border truncate">Trắc nghiệm</span>
+        </div>
+
+        <div class="flex items-center gap-1.5 sm:gap-2 shrink-0">
+          <button id="ios-exit-focus-btn" onclick="toggleFullScreen()" class="hidden btn-touch px-2.5 py-1 rounded-xl text-xs font-bold bg-rose-500/20 text-rose-300 border border-rose-500/40 items-center gap-1 active:scale-95">
+            <i class="fa-solid fa-compress"></i> <span>Thu nhỏ</span>
+          </button>
+          <button onclick="prevSlide()" aria-label="Câu trước" class="btn-touch px-3 sm:px-4 py-1.5 rounded-xl text-xs sm:text-sm font-bold box-bg flex items-center justify-center gap-1.5 hover:bg-slate-700/50 active:scale-95 transition-transform">
+            <i class="fa-solid fa-chevron-left"></i> <span class="hidden sm:inline">Trước</span>
+          </button>
+          <button onclick="nextSlide()" aria-label="Câu tiếp theo" class="btn-touch px-3 sm:px-4 py-1.5 rounded-xl text-xs sm:text-sm font-bold bg-indigo-600 hover:bg-indigo-500 text-white flex items-center justify-center gap-1.5 shadow-md active:scale-95 transition-transform">
+            <span class="hidden sm:inline">Sau</span> <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- ĐỀ BÀI VÀ TƯƠNG TÁC FULL-WIDTH (CUỘN MƯỢT NATIVE IOS + VUỐT CHUYỂN CÂU) -->
+      <div id="main-content-scroll" class="ios-scroll flex-1 space-y-2.5 sm:space-y-4 pr-0.5 sm:pr-1 min-h-0">
+        <!-- ĐỀ BÀI -->
+        <div id="slide-question" class="text-[15.5px] sm:text-base md:text-[17px] leading-relaxed box-bg p-3 sm:p-5 rounded-xl sm:rounded-2xl border shadow-inner min-w-0 break-words"></div>
+
+        <!-- KHUNG PHẦN BÀI LÀM HỌC SINH -->
+        <div id="col-interactive" class="box-bg p-3 sm:p-5 rounded-xl sm:rounded-2xl border flex flex-col space-y-2.5 sm:space-y-3 shadow-inner min-w-0">
+          <h3 class="text-xs sm:text-sm font-extrabold uppercase opacity-80 pb-1.5 sm:pb-2 border-b border-slate-700/50 flex items-center gap-2 text-indigo-400">
+            <i class="fa-solid fa-pen-to-square text-sm sm:text-base"></i> Phần trả lời của học sinh
+          </h3>
+          <div id="interactive-area" class="space-y-2.5 sm:space-y-3"></div>
+        </div>
+
+        <!-- KHUNG LỜI GIẢI CHI TIẾT -->
+        <div id="solution-box" class="hidden p-3 sm:p-5 rounded-xl sm:rounded-2xl bg-amber-500/10 border-2 border-amber-500/40 text-[15px] sm:text-base shadow-xl space-y-2.5 sm:space-y-3 min-w-0 break-words">
+          <h4 class="font-extrabold text-amber-400 flex items-center gap-2 text-base md:text-lg"><i class="fa-solid fa-lightbulb text-amber-400"></i> Lời giải chi tiết:</h4>
+          <div id="slide-solution" class="leading-relaxed"></div>
+        </div>
+      </div>
+
+      <!-- FOOTER TOGGLE LỜI GIẢI -->
+      <div id="footer-sol-bar" class="pt-2 sm:pt-3 border-t border-slate-700/50 flex justify-between items-center shrink-0 mt-2 sm:mt-2.5 gap-2">
+        <button onclick="toggleSolution()" id="btn-sol-toggle" class="btn-touch px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-extrabold bg-amber-500/20 text-amber-400 border-2 border-amber-500/50 hover:bg-amber-500/30 shadow-md active:scale-95 transition-transform">
+          <i class="fa-solid fa-lock mr-1.5"></i> Xem Lời giải
+        </button>
+        <div class="flex items-center gap-2">
+          <span class="hidden md:inline text-xs opacity-60">Vuốt trái/phải hoặc dùng phím ← →</span>
+          <span class="text-xs sm:text-sm opacity-85 font-extrabold px-2.5 py-1 rounded-lg box-bg" id="progress-indicator">1 / 1</span>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- OVERLAY & DRAWER BẢNG MỤC LỤC (TÁCH ĐỘC LẬP KHỎI STACKING CONTEXT ĐỂ CHẠY MƯỢT 100% TRÊN IPHONE/IPAD) -->
+  <div id="toc-overlay" onclick="toggleTocDrawer()" class="fixed inset-0 z-40 bg-slate-950/60 backdrop-blur-xs hidden transition-opacity"></div>
+  <aside id="toc-drawer" class="fixed top-0 right-0 bottom-0 w-[86vw] max-w-sm glass-card safe-drawer pl-4 flex flex-col z-50 transition-transform duration-300 ease-out transform translate-x-full border-l-2 border-indigo-500/40 shadow-2xl">
+    <div class="flex justify-between items-center pb-3 border-b border-slate-700/50">
+      <h3 class="font-black text-sm sm:text-base text-emerald-400 flex items-center gap-2"><i class="fa-solid fa-list-check"></i> Bảng Mục Lục Câu Hỏi</h3>
+      <button onclick="toggleTocDrawer()" aria-label="Đóng mục lục" class="btn-touch flex items-center justify-center rounded-xl box-bg opacity-85 hover:opacity-100 text-lg"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <div id="toc-grid" class="ios-scroll grid grid-cols-3 sm:grid-cols-4 gap-2 flex-1 my-3 pr-1"></div>
+
+    <div class="pt-2.5 border-t border-slate-700/50 flex items-center justify-between gap-2">
+      <button onclick="resetExamProgress()" class="btn-touch px-3 py-2 rounded-xl text-xs font-bold bg-rose-500/20 text-rose-300 border border-rose-500/40 hover:bg-rose-500/30 flex items-center gap-1.5">
+        <i class="fa-solid fa-rotate-left"></i> Làm lại từ đầu
+      </button>
+      <button onclick="toggleTocDrawer(); showScoreModal();" class="btn-touch px-3.5 py-2 rounded-xl text-xs font-extrabold bg-amber-500 text-slate-950 shadow flex items-center gap-1.5">
+        <i class="fa-solid fa-trophy"></i> Nộp & Xem điểm
+      </button>
+    </div>
+  </aside>
+
+  <!-- MODAL PHÓNG TO HÌNH VẼ & BIỂU ĐỒ CHO IPHONE / IPAD -->
+  <div id="modal-figure-zoom" class="fixed inset-0 z-50 bg-slate-950/90 backdrop-blur-md hidden flex flex-col justify-between p-3 sm:p-6">
+    <div class="flex items-center justify-between gap-2 shrink-0" style="padding-top: env(safe-area-inset-top);">
+      <span class="text-xs sm:text-sm font-extrabold text-indigo-300 flex items-center gap-2">
+        <i class="fa-solid fa-magnifying-glass-plus"></i> Chế độ Xem chi tiết Hình vẽ / Biểu đồ
+      </span>
+      <div class="flex items-center gap-1.5 sm:gap-2">
+        <button onclick="adjustFigureZoom(-0.25)" class="btn-touch px-3 py-1.5 rounded-xl bg-slate-800 text-white font-black text-sm border border-slate-600">−</button>
+        <button onclick="resetFigureZoom()" id="zoom-level-label" class="btn-touch px-3 py-1.5 rounded-xl bg-slate-800 text-amber-400 font-bold text-xs border border-slate-600">100%</button>
+        <button onclick="adjustFigureZoom(0.25)" class="btn-touch px-3 py-1.5 rounded-xl bg-slate-800 text-white font-black text-sm border border-slate-600">+</button>
+        <button onclick="closeFigureZoom()" class="btn-touch px-3.5 py-1.5 rounded-xl bg-rose-600 text-white font-extrabold text-xs sm:text-sm ml-1">Đóng</button>
+      </div>
+    </div>
+    <div id="figure-zoom-stage" class="flex-1 overflow-auto flex items-center justify-center my-3 rounded-2xl bg-white p-4 shadow-2xl" style="-webkit-overflow-scrolling: touch;">
+      <div id="figure-zoom-content" class="transition-transform duration-150 origin-center flex items-center justify-center"></div>
+    </div>
+  </div>
+
+  <!-- MODAL BẢNG ĐIỂM -->
+  <div id="modal-score" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md hidden flex items-center justify-center p-4">
+    <div class="glass-card max-w-md w-full rounded-3xl p-6 text-center space-y-5 border-2 border-indigo-500/40 shadow-2xl">
+      <div class="w-16 h-16 rounded-full bg-amber-500/20 text-amber-400 border-2 border-amber-500/40 flex items-center justify-center mx-auto text-2xl shadow-lg"><i class="fa-solid fa-trophy"></i></div>
+      <h3 class="text-xl font-black text-amber-400">KẾT QUẢ BÀI LÀM THI TRỰC TUYẾN</h3>
+      <div id="score-student-info" class="text-xs font-bold text-slate-300 box-bg p-2.5 rounded-xl border"></div>
+      <div class="text-4xl font-black text-indigo-300"><span id="score-val">0.0</span> <span class="text-sm opacity-60">/ 10.0</span></div>
+      <p id="score-msg" class="text-sm opacity-80 font-medium"></p>
+      <button onclick="document.getElementById('modal-score').classList.add('hidden')" class="btn-touch w-full py-3 rounded-2xl bg-indigo-600 hover:bg-indigo-500 font-extrabold text-white text-sm shadow-lg">Đóng</button>
+    </div>
+  </div>
+
+  <!-- TOAST THÔNG BÁO NHẸ CHO IPHONE/IPAD -->
+  <div id="ios-toast" class="fixed bottom-16 left-1/2 -translate-x-1/2 z-50 px-4 py-2 rounded-2xl bg-slate-900/95 text-slate-100 border border-indigo-500/40 text-xs font-bold shadow-2xl pointer-events-none opacity-0 transition-opacity duration-300 text-center max-w-[90vw]"></div>
+
+  <script>
+    let EXAM_INFO = {"department": "27 Nguyễn Đức", "school": "Lớp toán cô Nhân", "examName": "BÀI TẬP VỀ NHÀ – NGÀY 22/11/2026", "year": "2026 – 2027", "subject": "TOÁN – LỚP 9", "duration": "90 phút", "examCode": "101", "hasDethiEnv": true};
+    let SLIDES = [{"id": 0, "isCoverSlide": true, "isTheorySlide": false, "title": "Trang Bìa", "type": "Cover", "question": "\n            <div class=\"max-w-4xl mx-auto space-y-4 sm:space-y-6 text-center py-2 sm:py-4\">\n              <div class=\"flex flex-col sm:flex-row justify-between items-start sm:items-center border-b border-indigo-500/30 pb-3 sm:pb-4 text-left gap-2\">\n                <div class=\"min-w-0\">\n                  <h3 class=\"text-xs sm:text-sm font-black uppercase text-indigo-400\">27 Nguyễn Đức<\/h3>\n                  <h2 class=\"text-sm sm:text-base font-extrabold text-emerald-400\">Lớp toán cô Nhân<\/h2>\n                <\/div>\n                <div class=\"self-start sm:self-auto shrink-0\">\n                  <span class=\"inline-block px-3 py-1 rounded-xl bg-amber-500/20 text-amber-400 border border-amber-500/40 text-xs font-bold\">Mã đề: 101<\/span>\n                <\/div>\n              <\/div>\n\n              <div class=\"py-3 sm:py-6 space-y-2.5 sm:space-y-3\">\n                <h1 class=\"text-xl sm:text-3xl md:text-4xl font-black tracking-tight text-indigo-300 uppercase leading-snug\">BÀI TẬP VỀ NHÀ – NGÀY 22/11/2026<\/h1>\n                <p class=\"text-sm sm:text-lg md:text-xl font-bold text-slate-300\">TOÁN – LỚP 9 - NĂM HỌC 2026 – 2027<\/p>\n                <div class=\"inline-flex items-center gap-2 px-4 py-1.5 rounded-2xl bg-indigo-500/20 text-indigo-300 border border-indigo-500/40 font-bold text-xs sm:text-sm\">\n                  <i class=\"fa-solid fa-clock\"><\/i> Thời gian làm bài: <span>90 phút<\/span>\n                <\/div>\n              <\/div>\n\n              <!-- KHUNG NHẬP THÔNG TIN HỌC SINH (FONT 16PX CHỐNG AUTO-ZOOM TRÊN IPHONE/IPAD) -->\n              <div class=\"glass-card p-4 sm:p-6 rounded-2xl sm:rounded-3xl max-w-xl mx-auto space-y-3.5 sm:space-y-4 border-2 border-indigo-500/40 text-left shadow-2xl\">\n                <h3 class=\"text-xs sm:text-sm font-black uppercase text-indigo-400 flex items-center gap-2 border-b border-slate-700/50 pb-2\">\n                  <i class=\"fa-solid fa-user-pen\"><\/i> Thông tin Thí sinh dự thi\n                <\/h3>\n                <div class=\"space-y-3\">\n                  <div>\n                    <label for=\"input-student-name\" class=\"block text-xs font-bold text-slate-300 mb-1\">Họ và Tên Học Sinh:<\/label>\n                    <input type=\"text\" id=\"input-student-name\" autocomplete=\"name\" placeholder=\"Nhập đầy đủ Họ và Tên...\" \n                      value=\"\"\n                      class=\"ios-input w-full p-3 rounded-xl box-bg border border-indigo-500/40 font-bold text-amber-400 text-base focus:outline-none focus:border-indigo-400\" />\n                  <\/div>\n                  <div class=\"grid grid-cols-1 sm:grid-cols-2 gap-3\">\n                    <div>\n                      <label for=\"input-student-class\" class=\"block text-xs font-bold text-slate-300 mb-1\">Lớp:<\/label>\n                      <input type=\"text\" id=\"input-student-class\" placeholder=\"VD: 8/9\" \n                        value=\"\"\n                        class=\"ios-input w-full p-3 rounded-xl box-bg border border-indigo-500/40 font-bold text-amber-400 text-base focus:outline-none focus:border-indigo-400\" />\n                    <\/div>\n                    <div>\n                      <label for=\"input-student-sbd\" class=\"block text-xs font-bold text-slate-300 mb-1\">Số Báo Danh (SBD):<\/label>\n                      <input type=\"text\" id=\"input-student-sbd\" inputmode=\"numeric\" placeholder=\"VD: 102\" \n                        class=\"ios-input w-full p-3 rounded-xl box-bg border border-indigo-500/40 font-bold text-amber-400 text-base focus:outline-none focus:border-indigo-400\" />\n                    <\/div>\n                  <\/div>\n                <\/div>\n                <button onclick=\"startExamSession()\" class=\"btn-touch w-full py-3.5 rounded-2xl bg-emerald-600 hover:bg-emerald-500 active:scale-[0.98] text-white font-black text-base shadow-xl flex items-center justify-center gap-2 transition-all\">\n                  <span>🚀 BẮT ĐẦU LÀM BÀI THI<\/span>\n                <\/button>\n              <\/div>\n            <\/div>\n            ", "options": [], "solution": ""}, {"id": 1, "isCoverSlide": false, "isTheorySlide": false, "title": "Bài 1", "type": "Essay", "level": "M1", "question": "Tính giá trị của biểu thức <span class=\"math inline\">\\(A =\n\\dfrac{1}{\\sqrt{2025} - \\sqrt{2026}} - \\dfrac{1}{\\sqrt{2025} +\n\\sqrt{2026}}\\)<\/span>.", "options": [], "correctIndex": 0, "tfItems": [], "correctAnswer": "", "essayItems": [{"label": "Đáp số / Kết quả", "text": ""}], "solution": "Ta có:<\/p>\n<p><span class=\"math display\">\\[\\begin{aligned}\nA &amp;=  \\dfrac{1}{\\sqrt{2025} - \\sqrt{2026}} - \\dfrac{1}{\\sqrt{2025} +\n\\sqrt{2026}} \\\\\n&amp;=  \\dfrac{\\left(\\sqrt{2025} + \\sqrt{2026}\\right) -\n\\left(\\sqrt{2025} - \\sqrt{2026}\\right)}{\\left(\\sqrt{2025} -\n\\sqrt{2026}\\right)\\left(\\sqrt{2025} + \\sqrt{2026}\\right)} \\\\\n&amp;=  \\dfrac{\\sqrt{2025} + \\sqrt{2026} - \\sqrt{2025} +\n\\sqrt{2026}}{2025 - 2026} \\\\\n&amp;=  \\dfrac{2\\sqrt{2026}}{-1} \\\\\n&amp;=  -2\\sqrt{2026}.\n\\end{aligned}\\]<\/span><\/p>\n<p>Vậy <span class=\"math inline\">\\(A = -2\\sqrt{2026}\\)<\/span>."}, {"id": 2, "isCoverSlide": false, "isTheorySlide": false, "title": "Bài 2", "type": "Essay", "level": "M2", "question": "<p>Cho biểu thức <span class=\"math inline\">\\(B =\n\\dfrac{x}{y}\\sqrt{\\dfrac{y^2}{x^4}} +\n\\dfrac{1}{x^2}\\sqrt{\\dfrac{x^4}{y^2}}\\)<\/span> với <span\nclass=\"math inline\">\\(x &gt; 0\\)<\/span>, <span class=\"math inline\">\\(y\n&lt; 0\\)<\/span>.<\/p>\n<ol>\n<li><p>Rút gọn biểu thức <span\nclass=\"math inline\">\\(B\\)<\/span>.<\/p><\/li>\n<li><p>Tính giá trị của <span class=\"math inline\">\\(B\\)<\/span> khi <span\nclass=\"math inline\">\\(x = 2\\)<\/span> và <span class=\"math inline\">\\(y =\n-1\\)<\/span>.<\/p><\/li>\n<\/ol>", "options": [], "correctIndex": 0, "tfItems": [], "correctAnswer": "", "essayItems": [{"label": "Ý 1", "text": "<p>Rút gọn biểu thức <span\nclass=\"math inline\">\\(B\\)<\/span>.<\/p>"}, {"label": "Ý 2", "text": "<p>Tính giá trị của <span class=\"math inline\">\\(B\\)<\/span> khi <span\nclass=\"math inline\">\\(x = 2\\)<\/span> và <span class=\"math inline\">\\(y =\n-1\\)<\/span>.<\/p>"}], "solution": "<ol>\n<li><p>Với <span class=\"math inline\">\\(x &gt; 0\\)<\/span> và <span\nclass=\"math inline\">\\(y &lt; 0\\)<\/span>, ta có <span\nclass=\"math inline\">\\(|x^2| = x^2\\)<\/span> và <span\nclass=\"math inline\">\\(|y| = -y\\)<\/span>.<br />\nDo đó:<\/p>\n<p><span class=\"math display\">\\[\\begin{aligned}\nB &amp;=  \\dfrac{x}{y}\\sqrt{\\dfrac{y^2}{x^4}} +\n\\dfrac{1}{x^2}\\sqrt{\\dfrac{x^4}{y^2}} \\\\\n    &amp;=  \\dfrac{x}{y} \\cdot \\dfrac{|y|}{x^2} + \\dfrac{1}{x^2} \\cdot\n\\dfrac{x^2}{|y|} \\\\\n    &amp;=  \\dfrac{x}{y} \\cdot \\dfrac{-y}{x^2} + \\dfrac{1}{x^2} \\cdot\n\\dfrac{x^2}{-y} \\\\\n    &amp;=  -\\dfrac{1}{x} - \\dfrac{1}{y}.\n\\end{aligned}\\]<\/span><\/p>\n<p>Vậy <span class=\"math inline\">\\(B = -\\dfrac{1}{x} -\n\\dfrac{1}{y}\\)<\/span>.<\/p><\/li>\n<li><p>Thay <span class=\"math inline\">\\(x = 2\\)<\/span> (thỏa mãn <span\nclass=\"math inline\">\\(x &gt; 0\\)<\/span>) và <span\nclass=\"math inline\">\\(y = -1\\)<\/span> (thỏa mãn <span\nclass=\"math inline\">\\(y &lt; 0\\)<\/span>) vào biểu thức <span\nclass=\"math inline\">\\(B\\)<\/span> đã rút gọn, ta được:<\/p>\n<p><span class=\"math display\">\\[\\begin{aligned}\nB = -\\dfrac{1}{2} - \\dfrac{1}{-1} = -\\dfrac{1}{2} + 1 = \\dfrac{1}{2}.\n\\end{aligned}\\]<\/span><\/p>\n<p>Vậy <span class=\"math inline\">\\(B = \\dfrac{1}{2}\\)<\/span> khi <span\nclass=\"math inline\">\\(x = 2\\)<\/span> và <span class=\"math inline\">\\(y =\n-1\\)<\/span>.<\/p><\/li>\n<\/ol>"}, {"id": 3, "isCoverSlide": false, "isTheorySlide": false, "title": "Bài 3", "type": "Essay", "level": "M2", "question": "<p>Cho biểu thức <span class=\"math inline\">\\(M = \\left(1 - \\dfrac{x +\n\\sqrt{x}}{\\sqrt{x} + 1}\\right)\\left(1 + \\dfrac{x - \\sqrt{x}}{\\sqrt{x} -\n1}\\right)\\)<\/span>.<\/p>\n<ol>\n<li><p>Tìm điều kiện của <span class=\"math inline\">\\(x\\)<\/span> để biểu\nthức <span class=\"math inline\">\\(M\\)<\/span> có nghĩa.<\/p><\/li>\n<li><p>Tìm giá trị của <span class=\"math inline\">\\(x\\)<\/span> để biểu\nthức <span class=\"math inline\">\\(M\\)<\/span> đạt giá trị lớn\nnhất.<\/p><\/li>\n<\/ol>", "options": [], "correctIndex": 0, "tfItems": [], "correctAnswer": "", "essayItems": [{"label": "Ý 1", "text": "<p>Tìm điều kiện của <span class=\"math inline\">\\(x\\)<\/span> để biểu\nthức <span class=\"math inline\">\\(M\\)<\/span> có nghĩa.<\/p>"}, {"label": "Ý 2", "text": "<p>Tìm giá trị của <span class=\"math inline\">\\(x\\)<\/span> để biểu\nthức <span class=\"math inline\">\\(M\\)<\/span> đạt giá trị lớn\nnhất.<\/p>"}], "solution": "<ol>\n<li><p>Biểu thức <span class=\"math inline\">\\(M\\)<\/span> có nghĩa khi và\nchỉ khi:<\/p>\n<p><span class=\"math display\">\\[\\begin{aligned}\n\\heva{&amp;x \\ge 0 \\\\ &amp;\\sqrt{x} + 1 \\neq 0 \\\\ &amp;\\sqrt{x} - 1 \\neq\n0} \\Leftrightarrow \\heva{&amp;x \\ge 0 \\\\ &amp;\\sqrt{x} \\neq 1}\n\\Leftrightarrow \\heva{&amp;x \\ge 0 \\\\ &amp;x \\neq 1.}\n\\end{aligned}\\]<\/span><\/p>\n<p>Vậy điều kiện của <span class=\"math inline\">\\(x\\)<\/span> để biểu thức\n<span class=\"math inline\">\\(M\\)<\/span> có nghĩa là <span\nclass=\"math inline\">\\(x \\ge 0\\)<\/span> và <span class=\"math inline\">\\(x\n\\neq 1\\)<\/span>.<\/p><\/li>\n<li><p>Với <span class=\"math inline\">\\(x \\ge 0\\)<\/span> và <span\nclass=\"math inline\">\\(x \\neq 1\\)<\/span>, ta rút gọn biểu thức <span\nclass=\"math inline\">\\(M\\)<\/span> như sau:<\/p>\n<p><span class=\"math display\">\\[\\begin{aligned}\nM &amp;=  \\left(1 - \\dfrac{x + \\sqrt{x}}{\\sqrt{x} + 1}\\right)\\left(1 +\n\\dfrac{x - \\sqrt{x}}{\\sqrt{x} - 1}\\right) \\\\\n    &amp;=  \\left[1 - \\dfrac{\\sqrt{x}\\left(\\sqrt{x} + 1\\right)}{\\sqrt{x}\n+ 1}\\right]\\left[1 + \\dfrac{\\sqrt{x}\\left(\\sqrt{x} - 1\\right)}{\\sqrt{x}\n- 1}\\right] \\\\\n    &amp;=  \\left(1 - \\sqrt{x}\\right)\\left(1 + \\sqrt{x}\\right) \\\\\n    &amp;=  1 - x.\n\\end{aligned}\\]<\/span><\/p>\n<p>Vì <span class=\"math inline\">\\(x \\ge 0\\)<\/span> nên <span\nclass=\"math inline\">\\(-x \\le 0\\)<\/span>, suy ra <span\nclass=\"math inline\">\\(M = 1 - x \\le 1\\)<\/span> với mọi <span\nclass=\"math inline\">\\(x \\ge 0\\)<\/span>, <span class=\"math inline\">\\(x\n\\neq 1\\)<\/span>.<br />\nDấu ‘‘<span class=\"math inline\">\\(=\\)<\/span>’’ xảy ra khi <span\nclass=\"math inline\">\\(x = 0\\)<\/span> (thỏa mãn điều kiện xác\nđịnh).<br />\nVậy biểu thức <span class=\"math inline\">\\(M\\)<\/span> đạt giá trị lớn\nnhất bằng <span class=\"math inline\">\\(1\\)<\/span> khi <span\nclass=\"math inline\">\\(x = 0\\)<\/span>.<\/p><\/li>\n<\/ol>"}, {"id": 4, "isCoverSlide": false, "isTheorySlide": false, "title": "Bài 4", "type": "Essay", "level": "M3", "question": "<p>Cho điểm <span class=\"math inline\">\\(M\\)<\/span> nằm ngoài đường tròn\n<span class=\"math inline\">\\((O; R)\\)<\/span>. Vẽ tiếp tuyến <span\nclass=\"math inline\">\\(MA\\)<\/span> với <span\nclass=\"math inline\">\\(A\\)<\/span> là tiếp điểm, cát tuyến <span\nclass=\"math inline\">\\(MBC\\)<\/span> (<span\nclass=\"math inline\">\\(B\\)<\/span> nằm giữa <span\nclass=\"math inline\">\\(M\\)<\/span> và <span\nclass=\"math inline\">\\(C\\)<\/span>) và <span\nclass=\"math inline\">\\(O\\)<\/span> nằm trong góc <span\nclass=\"math inline\">\\(AMC\\)<\/span>. Lấy <span\nclass=\"math inline\">\\(I\\)<\/span> là trung điểm của <span\nclass=\"math inline\">\\(BC\\)<\/span>. Tia <span\nclass=\"math inline\">\\(OI\\)<\/span> cắt cung nhỏ <span\nclass=\"math inline\">\\(BC\\)<\/span> tại <span\nclass=\"math inline\">\\(N\\)<\/span>, <span\nclass=\"math inline\">\\(AN\\)<\/span> cắt <span\nclass=\"math inline\">\\(BC\\)<\/span> tại <span\nclass=\"math inline\">\\(D\\)<\/span>.<\/p>\n<ol>\n<li><p>Chứng minh <span class=\"math inline\">\\(AD\\)<\/span> là phân giác\ncủa góc <span class=\"math inline\">\\(BAC\\)<\/span>.<\/p><\/li>\n<li><p>Chứng minh <span class=\"math inline\">\\(MD^2 = MB \\cdot\nMC\\)<\/span>.<\/p><\/li>\n<li><p>Gọi <span class=\"math inline\">\\(H, K\\)<\/span> là hình chiếu của\n<span class=\"math inline\">\\(N\\)<\/span> lên <span\nclass=\"math inline\">\\(AB\\)<\/span> và <span\nclass=\"math inline\">\\(AC\\)<\/span>. Chứng minh ba điểm <span\nclass=\"math inline\">\\(H, I, K\\)<\/span> thẳng hàng.<\/p><\/li>\n<\/ol>\n<div class=\"center\">\n<p><div onclick=\"openFigureZoom(this)\" title=\"Chạm để phóng to hình vẽ\" class=\"tikz-container group relative w-full flex flex-col items-center justify-center my-2 cursor-zoom-in\"><svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 223.551 157.871\" style=\"width: 100%; max-width: 343px; height: auto; display: block;\">\n<defs>\n<g>\n<g id=\"glyph-0-0\">\n<path d=\"M 1.78125 -1.140625 C 1.375 -0.484375 1 -0.34375 0.5625 -0.3125 C 0.4375 -0.296875 0.34375 -0.296875 0.34375 -0.109375 C 0.34375 -0.046875 0.390625 0 0.484375 0 C 0.75 0 1.046875 -0.03125 1.328125 -0.03125 C 1.65625 -0.03125 2 0 2.328125 0 C 2.390625 0 2.515625 0 2.515625 -0.1875 C 2.515625 -0.296875 2.421875 -0.3125 2.359375 -0.3125 C 2.125 -0.328125 1.890625 -0.40625 1.890625 -0.65625 C 1.890625 -0.78125 1.953125 -0.890625 2.03125 -1.03125 L 2.78125 -2.296875 L 5.28125 -2.296875 C 5.296875 -2.09375 5.4375 -0.734375 5.4375 -0.640625 C 5.4375 -0.34375 4.921875 -0.3125 4.71875 -0.3125 C 4.578125 -0.3125 4.484375 -0.3125 4.484375 -0.109375 C 4.484375 0 4.59375 0 4.625 0 C 5.03125 0 5.453125 -0.03125 5.859375 -0.03125 C 6.109375 -0.03125 6.734375 0 6.984375 0 C 7.046875 0 7.171875 0 7.171875 -0.203125 C 7.171875 -0.3125 7.0625 -0.3125 6.9375 -0.3125 C 6.3125 -0.3125 6.3125 -0.375 6.296875 -0.671875 L 5.6875 -6.875 C 5.671875 -7.078125 5.671875 -7.109375 5.5 -7.109375 C 5.34375 -7.109375 5.296875 -7.046875 5.234375 -6.953125 Z M 2.96875 -2.609375 L 4.921875 -5.890625 L 5.25 -2.609375 Z M 2.96875 -2.609375 \"/>\n<\/g>\n<g id=\"glyph-0-1\">\n<path d=\"M 7.359375 -4.328125 C 7.359375 -5.9375 6.296875 -7 4.8125 -7 C 2.671875 -7 0.484375 -4.75 0.484375 -2.4375 C 0.484375 -0.78125 1.59375 0.21875 3.03125 0.21875 C 5.140625 0.21875 7.359375 -1.953125 7.359375 -4.328125 Z M 3.09375 -0.046875 C 2.109375 -0.046875 1.40625 -0.84375 1.40625 -2.15625 C 1.40625 -2.59375 1.546875 -4.046875 2.3125 -5.203125 C 3 -6.234375 3.96875 -6.75 4.765625 -6.75 C 5.578125 -6.75 6.46875 -6.203125 6.46875 -4.71875 C 6.46875 -4 6.203125 -2.453125 5.21875 -1.234375 C 4.734375 -0.625 3.921875 -0.046875 3.09375 -0.046875 Z M 3.09375 -0.046875 \"/>\n<\/g>\n<g id=\"glyph-0-2\">\n<path d=\"M 3.71875 -6.015625 C 3.8125 -6.375 3.828125 -6.484375 4.625 -6.484375 C 4.859375 -6.484375 4.9375 -6.484375 4.9375 -6.671875 C 4.9375 -6.78125 4.828125 -6.78125 4.796875 -6.78125 C 4.5 -6.78125 3.765625 -6.75 3.484375 -6.75 C 3.1875 -6.75 2.453125 -6.78125 2.15625 -6.78125 C 2.09375 -6.78125 1.953125 -6.78125 1.953125 -6.59375 C 1.953125 -6.484375 2.046875 -6.484375 2.234375 -6.484375 C 2.65625 -6.484375 2.921875 -6.484375 2.921875 -6.296875 C 2.921875 -6.234375 2.921875 -6.21875 2.90625 -6.125 L 1.5625 -0.78125 C 1.46875 -0.40625 1.4375 -0.3125 0.65625 -0.3125 C 0.421875 -0.3125 0.34375 -0.3125 0.34375 -0.109375 C 0.34375 0 0.453125 0 0.484375 0 C 0.78125 0 1.5 -0.03125 1.78125 -0.03125 C 2.09375 -0.03125 2.828125 0 3.125 0 C 3.203125 0 3.3125 0 3.3125 -0.1875 C 3.3125 -0.3125 3.234375 -0.3125 3.015625 -0.3125 C 2.84375 -0.3125 2.796875 -0.3125 2.59375 -0.328125 C 2.390625 -0.34375 2.34375 -0.390625 2.34375 -0.5 C 2.34375 -0.578125 2.359375 -0.65625 2.390625 -0.71875 Z M 3.71875 -6.015625 \"/>\n<\/g>\n<g id=\"glyph-0-3\">\n<path d=\"M 5.0625 -4.015625 C 5.046875 -4.046875 5.015625 -4.125 5.015625 -4.15625 C 5.015625 -4.15625 5.1875 -4.296875 5.296875 -4.375 L 7.03125 -5.71875 C 7.96875 -6.40625 8.359375 -6.453125 8.65625 -6.484375 C 8.734375 -6.484375 8.828125 -6.5 8.828125 -6.671875 C 8.828125 -6.71875 8.796875 -6.78125 8.71875 -6.78125 C 8.5 -6.78125 8.265625 -6.75 8.015625 -6.75 C 7.65625 -6.75 7.28125 -6.78125 6.921875 -6.78125 C 6.84375 -6.78125 6.734375 -6.78125 6.734375 -6.59375 C 6.734375 -6.515625 6.78125 -6.484375 6.84375 -6.484375 C 7.0625 -6.453125 7.15625 -6.40625 7.15625 -6.265625 C 7.15625 -6.09375 6.859375 -5.859375 6.796875 -5.8125 L 2.921875 -2.828125 L 3.71875 -6.015625 C 3.8125 -6.375 3.828125 -6.484375 4.546875 -6.484375 C 4.796875 -6.484375 4.890625 -6.484375 4.890625 -6.671875 C 4.890625 -6.765625 4.8125 -6.78125 4.75 -6.78125 C 4.46875 -6.78125 3.75 -6.75 3.484375 -6.75 C 3.1875 -6.75 2.484375 -6.78125 2.203125 -6.78125 C 2.125 -6.78125 2 -6.78125 2 -6.59375 C 2 -6.484375 2.09375 -6.484375 2.28125 -6.484375 C 2.421875 -6.484375 2.59375 -6.46875 2.71875 -6.453125 C 2.875 -6.4375 2.9375 -6.40625 2.9375 -6.296875 C 2.9375 -6.265625 2.921875 -6.234375 2.890625 -6.109375 L 1.5625 -0.78125 C 1.453125 -0.390625 1.4375 -0.3125 0.65625 -0.3125 C 0.484375 -0.3125 0.375 -0.3125 0.375 -0.125 C 0.375 0 0.5 0 0.53125 0 C 0.8125 0 1.515625 -0.03125 1.78125 -0.03125 C 2 -0.03125 2.21875 -0.015625 2.421875 -0.015625 C 2.640625 -0.015625 2.859375 0 3.078125 0 C 3.140625 0 3.265625 0 3.265625 -0.203125 C 3.265625 -0.3125 3.1875 -0.3125 2.984375 -0.3125 C 2.625 -0.3125 2.34375 -0.3125 2.34375 -0.484375 C 2.34375 -0.5625 2.40625 -0.78125 2.4375 -0.921875 C 2.578125 -1.4375 2.703125 -1.96875 2.828125 -2.484375 L 4.3125 -3.640625 L 5.46875 -0.96875 C 5.578125 -0.703125 5.578125 -0.671875 5.578125 -0.609375 C 5.578125 -0.3125 5.15625 -0.3125 5.0625 -0.3125 C 4.953125 -0.3125 4.84375 -0.3125 4.84375 -0.109375 C 4.84375 0 4.96875 0 4.984375 0 C 5.390625 0 5.796875 -0.03125 6.203125 -0.03125 C 6.421875 -0.03125 6.953125 0 7.171875 0 C 7.21875 0 7.359375 0 7.359375 -0.203125 C 7.359375 -0.3125 7.25 -0.3125 7.15625 -0.3125 C 6.75 -0.3125 6.625 -0.40625 6.46875 -0.75 Z M 5.0625 -4.015625 \"/>\n<\/g>\n<g id=\"glyph-0-4\">\n<path d=\"M 1.578125 -0.78125 C 1.484375 -0.390625 1.453125 -0.3125 0.671875 -0.3125 C 0.5 -0.3125 0.390625 -0.3125 0.390625 -0.125 C 0.390625 0 0.484375 0 0.671875 0 L 3.96875 0 C 6.03125 0 7.984375 -2.09375 7.984375 -4.265625 C 7.984375 -5.671875 7.140625 -6.78125 5.65625 -6.78125 L 2.3125 -6.78125 C 2.125 -6.78125 2.015625 -6.78125 2.015625 -6.59375 C 2.015625 -6.484375 2.109375 -6.484375 2.3125 -6.484375 C 2.4375 -6.484375 2.609375 -6.46875 2.734375 -6.453125 C 2.890625 -6.4375 2.953125 -6.40625 2.953125 -6.296875 C 2.953125 -6.265625 2.9375 -6.234375 2.90625 -6.109375 Z M 3.734375 -6.109375 C 3.8125 -6.453125 3.828125 -6.484375 4.265625 -6.484375 L 5.328125 -6.484375 C 6.296875 -6.484375 7.125 -5.953125 7.125 -4.640625 C 7.125 -4.15625 6.921875 -2.53125 6.078125 -1.4375 C 5.796875 -1.0625 5.015625 -0.3125 3.78125 -0.3125 L 2.65625 -0.3125 C 2.53125 -0.3125 2.5 -0.3125 2.4375 -0.3125 C 2.34375 -0.328125 2.3125 -0.34375 2.3125 -0.421875 C 2.3125 -0.453125 2.3125 -0.46875 2.359375 -0.640625 Z M 3.734375 -6.109375 \"/>\n<\/g>\n<g id=\"glyph-0-5\">\n<path d=\"M 9.203125 -6.015625 C 9.296875 -6.375 9.3125 -6.484375 10.0625 -6.484375 C 10.28125 -6.484375 10.375 -6.484375 10.375 -6.671875 C 10.375 -6.78125 10.28125 -6.78125 10.109375 -6.78125 L 8.796875 -6.78125 C 8.53125 -6.78125 8.53125 -6.78125 8.40625 -6.59375 L 4.78125 -0.9375 L 4 -6.5625 C 3.96875 -6.78125 3.953125 -6.78125 3.703125 -6.78125 L 2.328125 -6.78125 C 2.140625 -6.78125 2.03125 -6.78125 2.03125 -6.59375 C 2.03125 -6.484375 2.125 -6.484375 2.328125 -6.484375 C 2.453125 -6.484375 2.640625 -6.46875 2.75 -6.453125 C 2.90625 -6.4375 2.96875 -6.40625 2.96875 -6.296875 C 2.96875 -6.265625 2.96875 -6.234375 2.9375 -6.109375 L 1.671875 -1.046875 C 1.5625 -0.65625 1.40625 -0.34375 0.59375 -0.3125 C 0.546875 -0.3125 0.421875 -0.296875 0.421875 -0.125 C 0.421875 -0.03125 0.484375 0 0.5625 0 C 0.875 0 1.21875 -0.03125 1.546875 -0.03125 C 1.890625 -0.03125 2.25 0 2.578125 0 C 2.625 0 2.75 0 2.75 -0.203125 C 2.75 -0.3125 2.640625 -0.3125 2.578125 -0.3125 C 2 -0.3125 1.890625 -0.515625 1.890625 -0.75 C 1.890625 -0.8125 1.90625 -0.859375 1.9375 -0.96875 L 3.296875 -6.390625 L 4.15625 -0.234375 C 4.171875 -0.109375 4.1875 0 4.296875 0 C 4.40625 0 4.46875 -0.109375 4.515625 -0.171875 L 8.53125 -6.46875 L 8.546875 -6.46875 L 7.125 -0.78125 C 7.03125 -0.390625 7 -0.3125 6.21875 -0.3125 C 6.046875 -0.3125 5.9375 -0.3125 5.9375 -0.125 C 5.9375 0 6.0625 0 6.09375 0 C 6.375 0 7.046875 -0.03125 7.328125 -0.03125 C 7.734375 -0.03125 8.15625 0 8.5625 0 C 8.625 0 8.75 0 8.75 -0.203125 C 8.75 -0.3125 8.671875 -0.3125 8.484375 -0.3125 C 8.109375 -0.3125 7.828125 -0.3125 7.828125 -0.484375 C 7.828125 -0.53125 7.828125 -0.546875 7.875 -0.71875 Z M 9.203125 -6.015625 \"/>\n<\/g>\n<g id=\"glyph-0-6\">\n<path d=\"M 1.59375 -0.78125 C 1.484375 -0.390625 1.46875 -0.3125 0.6875 -0.3125 C 0.515625 -0.3125 0.421875 -0.3125 0.421875 -0.109375 C 0.421875 0 0.5 0 0.6875 0 L 4.234375 0 C 5.796875 0 6.96875 -1.171875 6.96875 -2.140625 C 6.96875 -2.859375 6.40625 -3.4375 5.4375 -3.546875 C 6.46875 -3.734375 7.515625 -4.46875 7.515625 -5.421875 C 7.515625 -6.15625 6.859375 -6.78125 5.671875 -6.78125 L 2.328125 -6.78125 C 2.140625 -6.78125 2.03125 -6.78125 2.03125 -6.59375 C 2.03125 -6.484375 2.125 -6.484375 2.3125 -6.484375 C 2.328125 -6.484375 2.53125 -6.484375 2.6875 -6.453125 C 2.875 -6.4375 2.96875 -6.421875 2.96875 -6.296875 C 2.96875 -6.265625 2.953125 -6.234375 2.921875 -6.109375 Z M 3.09375 -3.640625 L 3.703125 -6.109375 C 3.796875 -6.453125 3.8125 -6.484375 4.25 -6.484375 L 5.53125 -6.484375 C 6.40625 -6.484375 6.609375 -5.890625 6.609375 -5.453125 C 6.609375 -4.578125 5.75 -3.640625 4.546875 -3.640625 Z M 2.640625 -0.3125 C 2.5 -0.3125 2.484375 -0.3125 2.421875 -0.3125 C 2.328125 -0.328125 2.296875 -0.34375 2.296875 -0.421875 C 2.296875 -0.453125 2.296875 -0.46875 2.34375 -0.640625 L 3.03125 -3.421875 L 4.90625 -3.421875 C 5.859375 -3.421875 6.046875 -2.6875 6.046875 -2.25 C 6.046875 -1.265625 5.171875 -0.3125 4 -0.3125 Z M 2.640625 -0.3125 \"/>\n<\/g>\n<g id=\"glyph-0-7\">\n<path d=\"M 7.578125 -6.015625 C 7.671875 -6.375 7.6875 -6.484375 8.421875 -6.484375 C 8.671875 -6.484375 8.75 -6.484375 8.75 -6.671875 C 8.75 -6.78125 8.640625 -6.78125 8.609375 -6.78125 C 8.34375 -6.78125 7.625 -6.75 7.34375 -6.75 C 7.0625 -6.75 6.34375 -6.78125 6.0625 -6.78125 C 5.984375 -6.78125 5.875 -6.78125 5.875 -6.59375 C 5.875 -6.484375 5.96875 -6.484375 6.15625 -6.484375 C 6.171875 -6.484375 6.359375 -6.484375 6.53125 -6.453125 C 6.703125 -6.4375 6.796875 -6.421875 6.796875 -6.296875 C 6.796875 -6.265625 6.78125 -6.234375 6.75 -6.109375 L 6.15625 -3.6875 L 3.125 -3.6875 L 3.71875 -6.015625 C 3.8125 -6.375 3.828125 -6.484375 4.546875 -6.484375 C 4.8125 -6.484375 4.890625 -6.484375 4.890625 -6.671875 C 4.890625 -6.78125 4.78125 -6.78125 4.75 -6.78125 C 4.46875 -6.78125 3.75 -6.75 3.484375 -6.75 C 3.1875 -6.75 2.484375 -6.78125 2.203125 -6.78125 C 2.109375 -6.78125 2 -6.78125 2 -6.59375 C 2 -6.484375 2.09375 -6.484375 2.28125 -6.484375 C 2.3125 -6.484375 2.5 -6.484375 2.65625 -6.453125 C 2.84375 -6.4375 2.9375 -6.421875 2.9375 -6.296875 C 2.9375 -6.265625 2.921875 -6.234375 2.890625 -6.109375 L 1.5625 -0.78125 C 1.453125 -0.390625 1.4375 -0.3125 0.65625 -0.3125 C 0.484375 -0.3125 0.390625 -0.3125 0.390625 -0.109375 C 0.390625 0 0.5 0 0.53125 0 C 0.8125 0 1.515625 -0.03125 1.78125 -0.03125 C 2 -0.03125 2.21875 -0.015625 2.421875 -0.015625 C 2.640625 -0.015625 2.859375 0 3.078125 0 C 3.15625 0 3.265625 0 3.265625 -0.203125 C 3.265625 -0.3125 3.1875 -0.3125 2.984375 -0.3125 C 2.625 -0.3125 2.34375 -0.3125 2.34375 -0.484375 C 2.34375 -0.546875 2.359375 -0.59375 2.375 -0.65625 L 3.046875 -3.375 L 6.078125 -3.375 C 5.671875 -1.734375 5.4375 -0.78125 5.390625 -0.640625 C 5.296875 -0.3125 5.109375 -0.3125 4.484375 -0.3125 C 4.34375 -0.3125 4.25 -0.3125 4.25 -0.109375 C 4.25 0 4.375 0 4.390625 0 C 4.671875 0 5.375 -0.03125 5.65625 -0.03125 C 5.859375 -0.03125 6.078125 -0.015625 6.296875 -0.015625 C 6.515625 -0.015625 6.734375 0 6.9375 0 C 7.015625 0 7.140625 0 7.140625 -0.203125 C 7.140625 -0.3125 7.046875 -0.3125 6.859375 -0.3125 C 6.484375 -0.3125 6.21875 -0.3125 6.21875 -0.484375 C 6.21875 -0.546875 6.234375 -0.59375 6.234375 -0.65625 Z M 7.578125 -6.015625 \"/>\n<\/g>\n<g id=\"glyph-0-8\">\n<path d=\"M 7.515625 -5.75 C 7.609375 -6.140625 7.796875 -6.453125 8.59375 -6.484375 C 8.640625 -6.484375 8.75 -6.484375 8.75 -6.671875 C 8.75 -6.6875 8.75 -6.78125 8.625 -6.78125 C 8.296875 -6.78125 7.953125 -6.75 7.625 -6.75 C 7.28125 -6.75 6.9375 -6.78125 6.609375 -6.78125 C 6.546875 -6.78125 6.421875 -6.78125 6.421875 -6.59375 C 6.421875 -6.484375 6.53125 -6.484375 6.609375 -6.484375 C 7.171875 -6.46875 7.28125 -6.265625 7.28125 -6.046875 C 7.28125 -6.015625 7.265625 -5.859375 7.25 -5.828125 L 6.140625 -1.40625 L 3.9375 -6.59375 C 3.859375 -6.78125 3.859375 -6.78125 3.625 -6.78125 L 2.296875 -6.78125 C 2.09375 -6.78125 2 -6.78125 2 -6.59375 C 2 -6.484375 2.09375 -6.484375 2.28125 -6.484375 C 2.328125 -6.484375 2.96875 -6.484375 2.96875 -6.390625 L 1.625 -1.046875 C 1.53125 -0.65625 1.359375 -0.34375 0.5625 -0.3125 C 0.5 -0.3125 0.390625 -0.296875 0.390625 -0.109375 C 0.390625 -0.046875 0.4375 0 0.515625 0 C 0.828125 0 1.1875 -0.03125 1.515625 -0.03125 C 1.84375 -0.03125 2.203125 0 2.53125 0 C 2.578125 0 2.71875 0 2.71875 -0.203125 C 2.71875 -0.296875 2.625 -0.3125 2.515625 -0.3125 C 1.9375 -0.328125 1.859375 -0.546875 1.859375 -0.75 C 1.859375 -0.8125 1.875 -0.859375 1.890625 -0.96875 L 3.203125 -6.21875 C 3.25 -6.15625 3.25 -6.140625 3.296875 -6.046875 L 5.78125 -0.1875 C 5.84375 -0.015625 5.875 0 5.96875 0 C 6.078125 0 6.078125 -0.03125 6.125 -0.203125 Z M 7.515625 -5.75 \"/>\n<\/g>\n<g id=\"glyph-0-9\">\n<path d=\"M 7.546875 -6.90625 C 7.546875 -6.9375 7.53125 -7 7.4375 -7 C 7.40625 -7 7.40625 -7 7.296875 -6.890625 L 6.59375 -6.125 C 6.515625 -6.265625 6.046875 -7 4.953125 -7 C 2.734375 -7 0.5 -4.8125 0.5 -2.5 C 0.5 -0.859375 1.671875 0.21875 3.1875 0.21875 C 4.046875 0.21875 4.8125 -0.171875 5.34375 -0.640625 C 6.265625 -1.453125 6.421875 -2.359375 6.421875 -2.390625 C 6.421875 -2.484375 6.328125 -2.484375 6.3125 -2.484375 C 6.25 -2.484375 6.203125 -2.46875 6.1875 -2.390625 C 6.09375 -2.09375 5.859375 -1.390625 5.171875 -0.8125 C 4.484375 -0.265625 3.859375 -0.09375 3.34375 -0.09375 C 2.453125 -0.09375 1.40625 -0.609375 1.40625 -2.15625 C 1.40625 -2.71875 1.609375 -4.328125 2.609375 -5.5 C 3.203125 -6.203125 4.140625 -6.703125 5.03125 -6.703125 C 6.046875 -6.703125 6.625 -5.9375 6.625 -4.78125 C 6.625 -4.375 6.59375 -4.375 6.59375 -4.265625 C 6.59375 -4.171875 6.703125 -4.171875 6.75 -4.171875 C 6.875 -4.171875 6.875 -4.1875 6.921875 -4.375 Z M 7.546875 -6.90625 \"/>\n<\/g>\n<\/g>\n<\/defs>\n<path fill=\"none\" stroke-width=\"0.19925\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke=\"rgb(50%, 50%, 50%)\" stroke-opacity=\"1\" stroke-miterlimit=\"10\" d=\"M 62.363709 -0.00146312 C 62.363709 34.442579 34.44055 62.361823 0.000422414 62.361823 C -34.443619 62.361823 -62.362864 34.442579 -62.362864 -0.00146312 C -62.362864 -34.441591 -34.443619 -62.364749 0.000422414 -62.364749 C 34.44055 -62.364749 62.363709 -34.441591 62.363709 -0.00146312 Z M 62.363709 -0.00146312 \" transform=\"matrix(0.997996, 0, 0, -0.997996, 152.812078, 75.959477)\"/>\n<path fill=\"none\" stroke-width=\"0.19925\" stroke-linecap=\"round\" stroke-linejoin=\"miter\" stroke=\"rgb(0%, 0%, 0%)\" stroke-opacity=\"1\" stroke-miterlimit=\"10\" d=\"M -127.559955 -0.00146312 L -30.490383 54.400553 \" transform=\"matrix(0.997996, 0, 0, -0.997996, 152.812078, 75.959477)\"/>\n<path fill=\"none\" stroke-width=\"0.19925\" stroke-linecap=\"round\" stroke-linejoin=\"miter\" stroke=\"rgb(0%, 0%, 0%)\" stroke-opacity=\"1\" stroke-miterlimit=\"10\" d=\"M -127.559955 -0.00146312 L 42.558385 -45.581107 \" transform=\"matrix(0.997996, 0, 0, -0.997996, 152.812078, 75.959477)\"/>\n<path fill=\"none\" stroke-width=\"0.19925\" stroke-linecap=\"round\" stroke-linejoin=\"miter\" stroke=\"rgb(0%, 0%, 0%)\" stroke-opacity=\"1\" stroke-miterlimit=\"10\" d=\"M -30.490383 54.400553 L -68.143983 -39.349867 \" transform=\"matrix(0.997996, 0, 0, -0.997996, 152.812078, 75.959477)\"/>\n<path fill=\"none\" stroke-width=\"0.19925\" stroke-linecap=\"round\" stroke-linejoin=\"miter\" stroke=\"rgb(0%, 0%, 0%)\" stroke-opacity=\"1\" stroke-miterlimit=\"10\" d=\"M -30.490383 54.400553 L 42.558385 -45.581107 \" transform=\"matrix(0.997996, 0, 0, -0.997996, 152.812078, 75.959477)\"/>\n<path fill=\"none\" stroke-width=\"0.19925\" stroke-linecap=\"round\" stroke-linejoin=\"miter\" stroke=\"rgb(0%, 0%, 0%)\" stroke-opacity=\"1\" stroke-miterlimit=\"10\" d=\"M -30.490383 54.400553 L -16.137394 -60.235481 \" transform=\"matrix(0.997996, 0, 0, -0.997996, 152.812078, 75.959477)\"/>\n<path fill=\"none\" stroke-width=\"0.19925\" stroke-linecap=\"round\" stroke-linejoin=\"miter\" stroke=\"rgb(0%, 0%, 0%)\" stroke-opacity=\"1\" stroke-miterlimit=\"10\" d=\"M 0.000422414 -0.00146312 L -16.137394 -60.235481 \" transform=\"matrix(0.997996, 0, 0, -0.997996, 152.812078, 75.959477)\"/>\n<path fill=\"none\" stroke-width=\"0.19925\" stroke-linecap=\"round\" stroke-linejoin=\"miter\" stroke=\"rgb(0%, 0%, 0%)\" stroke-opacity=\"1\" stroke-miterlimit=\"10\" d=\"M -59.646481 -18.198094 L -16.137394 -60.235481 \" transform=\"matrix(0.997996, 0, 0, -0.997996, 152.812078, 75.959477)\"/>\n<path fill=\"none\" stroke-width=\"0.19925\" stroke-linecap=\"round\" stroke-linejoin=\"miter\" stroke=\"rgb(0%, 0%, 0%)\" stroke-opacity=\"1\" stroke-miterlimit=\"10\" d=\"M 42.558385 -45.581107 L -16.137394 -60.235481 \" transform=\"matrix(0.997996, 0, 0, -0.997996, 152.812078, 75.959477)\"/>\n<path fill=\"none\" stroke-width=\"0.19925\" stroke-linecap=\"round\" stroke-linejoin=\"miter\" stroke=\"rgb(0%, 0%, 0%)\" stroke-opacity=\"1\" stroke-miterlimit=\"10\" d=\"M -16.137394 -60.235481 L -68.143983 -39.349867 \" transform=\"matrix(0.997996, 0, 0, -0.997996, 152.812078, 75.959477)\"/>\n<path fill=\"none\" stroke-width=\"0.19925\" stroke-linecap=\"round\" stroke-linejoin=\"miter\" stroke=\"rgb(0%, 0%, 0%)\" stroke-opacity=\"1\" stroke-miterlimit=\"10\" d=\"M -16.137394 -60.235481 L 29.113466 -27.177029 \" transform=\"matrix(0.997996, 0, 0, -0.997996, 152.812078, 75.959477)\"/>\n<path fill=\"none\" stroke-width=\"0.19925\" stroke-linecap=\"round\" stroke-linejoin=\"miter\" stroke=\"rgb(0%, 0%, 0%)\" stroke-opacity=\"1\" stroke-dasharray=\"2.98883 2.98883\" stroke-miterlimit=\"10\" d=\"M -79.811902 -40.809825 L 40.785299 -25.717072 \" transform=\"matrix(0.997996, 0, 0, -0.997996, 152.812078, 75.959477)\"/>\n<path fill=\"none\" stroke-width=\"0.3985\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke=\"rgb(0%, 0%, 0%)\" stroke-opacity=\"1\" stroke-miterlimit=\"10\" d=\"M -8.544048 -31.889601 L -7.224998 -26.961754 L -2.297152 -28.280804 L -3.616202 -33.208651 L -8.544048 -31.889601 \" transform=\"matrix(0.997996, 0, 0, -0.997996, 152.812078, 75.959477)\"/>\n<path fill=\"none\" stroke-width=\"0.3985\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke=\"rgb(0%, 0%, 0%)\" stroke-opacity=\"1\" stroke-miterlimit=\"10\" d=\"M -68.143983 -39.349867 L -63.407927 -41.252117 L -61.505677 -36.516062 L -66.241733 -34.613811 L -68.143983 -39.349867 \" transform=\"matrix(0.997996, 0, 0, -0.997996, 152.812078, 75.959477)\"/>\n<path fill=\"none\" stroke-width=\"0.3985\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke=\"rgb(0%, 0%, 0%)\" stroke-opacity=\"1\" stroke-miterlimit=\"10\" d=\"M 29.113466 -27.177029 L 24.991923 -30.186969 L 28.001863 -34.304598 L 32.123406 -31.294658 L 29.113466 -27.177029 \" transform=\"matrix(0.997996, 0, 0, -0.997996, 152.812078, 75.959477)\"/>\n<path fill-rule=\"nonzero\" fill=\"rgb(0%, 0%, 0%)\" fill-opacity=\"1\" stroke-width=\"0.3985\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke=\"rgb(0%, 0%, 0%)\" stroke-opacity=\"1\" stroke-miterlimit=\"10\" d=\"M 1.096369 -0.00146312 C 1.096369 0.605222 0.607107 1.094484 0.000422414 1.094484 C -0.606262 1.094484 -1.095524 0.605222 -1.095524 -0.00146312 C -1.095524 -0.604234 -0.606262 -1.09741 0.000422414 -1.09741 C 0.607107 -1.09741 1.096369 -0.604234 1.096369 -0.00146312 Z M 1.096369 -0.00146312 \" transform=\"matrix(0.997996, 0, 0, -0.997996, 152.812078, 75.959477)\"/>\n<path fill-rule=\"nonzero\" fill=\"rgb(0%, 0%, 0%)\" fill-opacity=\"1\" stroke-width=\"0.3985\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke=\"rgb(0%, 0%, 0%)\" stroke-opacity=\"1\" stroke-miterlimit=\"10\" d=\"M -126.464009 -0.00146312 C -126.464009 0.605222 -126.957185 1.094484 -127.559955 1.094484 C -128.16664 1.094484 -128.655902 0.605222 -128.655902 -0.00146312 C -128.655902 -0.604234 -128.16664 -1.09741 -127.559955 -1.09741 C -126.957185 -1.09741 -126.464009 -0.604234 -126.464009 -0.00146312 Z M -126.464009 -0.00146312 \" transform=\"matrix(0.997996, 0, 0, -0.997996, 152.812078, 75.959477)\"/>\n<path fill-rule=\"nonzero\" fill=\"rgb(0%, 0%, 0%)\" fill-opacity=\"1\" stroke-width=\"0.3985\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke=\"rgb(0%, 0%, 0%)\" stroke-opacity=\"1\" stroke-miterlimit=\"10\" d=\"M -29.394436 54.400553 C -29.394436 55.007237 -29.883698 55.496499 -30.490383 55.496499 C -31.093154 55.496499 -31.582416 55.007237 -31.582416 54.400553 C -31.582416 53.797782 -31.093154 53.304606 -30.490383 53.304606 C -29.883698 53.304606 -29.394436 53.797782 -29.394436 54.400553 Z M -29.394436 54.400553 \" transform=\"matrix(0.997996, 0, 0, -0.997996, 152.812078, 75.959477)\"/>\n<path fill-rule=\"nonzero\" fill=\"rgb(0%, 0%, 0%)\" fill-opacity=\"1\" stroke-width=\"0.3985\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke=\"rgb(0%, 0%, 0%)\" stroke-opacity=\"1\" stroke-miterlimit=\"10\" d=\"M -58.550535 -18.198094 C -58.550535 -17.591409 -59.043711 -17.102147 -59.646481 -17.102147 C -60.253166 -17.102147 -60.742428 -17.591409 -60.742428 -18.198094 C -60.742428 -18.804779 -60.253166 -19.294041 -59.646481 -19.294041 C -59.043711 -19.294041 -58.550535 -18.804779 -58.550535 -18.198094 Z M -58.550535 -18.198094 \" transform=\"matrix(0.997996, 0, 0, -0.997996, 152.812078, 75.959477)\"/>\n<path fill-rule=\"nonzero\" fill=\"rgb(0%, 0%, 0%)\" fill-opacity=\"1\" stroke-width=\"0.3985\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke=\"rgb(0%, 0%, 0%)\" stroke-opacity=\"1\" stroke-miterlimit=\"10\" d=\"M 43.654331 -45.581107 C 43.654331 -44.974422 43.165069 -44.48516 42.558385 -44.48516 C 41.955614 -44.48516 41.462438 -44.974422 41.462438 -45.581107 C 41.462438 -46.187792 41.955614 -46.677054 42.558385 -46.677054 C 43.165069 -46.677054 43.654331 -46.187792 43.654331 -45.581107 Z M 43.654331 -45.581107 \" transform=\"matrix(0.997996, 0, 0, -0.997996, 152.812078, 75.959477)\"/>\n<path fill-rule=\"nonzero\" fill=\"rgb(0%, 0%, 0%)\" fill-opacity=\"1\" stroke-width=\"0.3985\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke=\"rgb(0%, 0%, 0%)\" stroke-opacity=\"1\" stroke-miterlimit=\"10\" d=\"M -7.448102 -31.889601 C -7.448102 -31.282916 -7.937364 -30.793654 -8.544048 -30.793654 C -9.150733 -30.793654 -9.639995 -31.282916 -9.639995 -31.889601 C -9.639995 -32.496285 -9.150733 -32.985547 -8.544048 -32.985547 C -7.937364 -32.985547 -7.448102 -32.496285 -7.448102 -31.889601 Z M -7.448102 -31.889601 \" transform=\"matrix(0.997996, 0, 0, -0.997996, 152.812078, 75.959477)\"/>\n<path fill-rule=\"nonzero\" fill=\"rgb(0%, 0%, 0%)\" fill-opacity=\"1\" stroke-width=\"0.3985\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke=\"rgb(0%, 0%, 0%)\" stroke-opacity=\"1\" stroke-miterlimit=\"10\" d=\"M -15.041447 -60.235481 C -15.041447 -59.632711 -15.530709 -59.139535 -16.137394 -59.139535 C -16.744079 -59.139535 -17.233341 -59.632711 -17.233341 -60.235481 C -17.233341 -60.842166 -16.744079 -61.331428 -16.137394 -61.331428 C -15.530709 -61.331428 -15.041447 -60.842166 -15.041447 -60.235481 Z M -15.041447 -60.235481 \" transform=\"matrix(0.997996, 0, 0, -0.997996, 152.812078, 75.959477)\"/>\n<path fill-rule=\"nonzero\" fill=\"rgb(0%, 0%, 0%)\" fill-opacity=\"1\" stroke-width=\"0.3985\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke=\"rgb(0%, 0%, 0%)\" stroke-opacity=\"1\" stroke-miterlimit=\"10\" d=\"M -18.979027 -28.801379 C -18.979027 -28.194694 -19.468289 -27.705432 -20.074974 -27.705432 C -20.677745 -27.705432 -21.170921 -28.194694 -21.170921 -28.801379 C -21.170921 -29.40415 -20.677745 -29.897326 -20.074974 -29.897326 C -19.468289 -29.897326 -18.979027 -29.40415 -18.979027 -28.801379 Z M -18.979027 -28.801379 \" transform=\"matrix(0.997996, 0, 0, -0.997996, 152.812078, 75.959477)\"/>\n<path fill-rule=\"nonzero\" fill=\"rgb(0%, 0%, 0%)\" fill-opacity=\"1\" stroke-width=\"0.3985\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke=\"rgb(0%, 0%, 0%)\" stroke-opacity=\"1\" stroke-miterlimit=\"10\" d=\"M -67.048036 -39.349867 C -67.048036 -38.743182 -67.537298 -38.25392 -68.143983 -38.25392 C -68.746754 -38.25392 -69.23993 -38.743182 -69.23993 -39.349867 C -69.23993 -39.956552 -68.746754 -40.445814 -68.143983 -40.445814 C -67.537298 -40.445814 -67.048036 -39.956552 -67.048036 -39.349867 Z M -67.048036 -39.349867 \" transform=\"matrix(0.997996, 0, 0, -0.997996, 152.812078, 75.959477)\"/>\n<path fill-rule=\"nonzero\" fill=\"rgb(0%, 0%, 0%)\" fill-opacity=\"1\" stroke-width=\"0.3985\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke=\"rgb(0%, 0%, 0%)\" stroke-opacity=\"1\" stroke-miterlimit=\"10\" d=\"M 30.209413 -27.177029 C 30.209413 -26.570344 29.720151 -26.081083 29.113466 -26.081083 C 28.506781 -26.081083 28.017519 -26.570344 28.017519 -27.177029 C 28.017519 -27.7798 28.506781 -28.272976 29.113466 -28.272976 C 29.720151 -28.272976 30.209413 -27.7798 30.209413 -27.177029 Z M 30.209413 -27.177029 \" transform=\"matrix(0.997996, 0, 0, -0.997996, 152.812078, 75.959477)\"/>\n<g fill=\"rgb(0%, 0%, 0%)\" fill-opacity=\"1\">\n<use xlink:href=\"#glyph-0-0\" x=\"118.656679\" y=\"18.155576\"/>\n<\/g>\n<g fill=\"rgb(0%, 0%, 0%)\" fill-opacity=\"1\">\n<use xlink:href=\"#glyph-0-1\" x=\"156.324025\" y=\"72.447531\"/>\n<\/g>\n<g fill=\"rgb(0%, 0%, 0%)\" fill-opacity=\"1\">\n<use xlink:href=\"#glyph-0-2\" x=\"147.797151\" y=\"104.272611\"/>\n<\/g>\n<g fill=\"rgb(0%, 0%, 0%)\" fill-opacity=\"1\">\n<use xlink:href=\"#glyph-0-3\" x=\"185.378669\" y=\"99.569058\"/>\n<\/g>\n<g fill=\"rgb(0%, 0%, 0%)\" fill-opacity=\"1\">\n<use xlink:href=\"#glyph-0-4\" x=\"120.759456\" y=\"101.189802\"/>\n<\/g>\n<g fill=\"rgb(0%, 0%, 0%)\" fill-opacity=\"1\">\n<use xlink:href=\"#glyph-0-5\" x=\"11.26737\" y=\"79.356654\"/>\n<\/g>\n<g fill=\"rgb(0%, 0%, 0%)\" fill-opacity=\"1\">\n<use xlink:href=\"#glyph-0-6\" x=\"81.73284\" y=\"104.426302\"/>\n<\/g>\n<g fill=\"rgb(0%, 0%, 0%)\" fill-opacity=\"1\">\n<use xlink:href=\"#glyph-0-7\" x=\"72.222941\" y=\"125.535904\"/>\n<\/g>\n<g fill=\"rgb(0%, 0%, 0%)\" fill-opacity=\"1\">\n<use xlink:href=\"#glyph-0-8\" x=\"132.170537\" y=\"146.381036\"/>\n<\/g>\n<g fill=\"rgb(0%, 0%, 0%)\" fill-opacity=\"1\">\n<use xlink:href=\"#glyph-0-9\" x=\"198.797717\" y=\"124.845291\"/>\n<\/g>\n<\/svg><span class=\"tikz-zoom-badge mt-1 inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-slate-800/80 text-slate-200 opacity-80 group-hover:opacity-100\"><i class=\"fa-solid fa-magnifying-glass-plus\"><\/i> Chạm phóng to<\/span><\/div><\/p>\n<\/div>", "options": [], "correctIndex": 0, "tfItems": [], "correctAnswer": "", "essayItems": [{"label": "Ý 1", "text": "<p>Chứng minh <span class=\"math inline\">\\(AD\\)<\/span> là phân giác\ncủa góc <span class=\"math inline\">\\(BAC\\)<\/span>.<\/p>"}, {"label": "Ý 2", "text": "<p>Chứng minh <span class=\"math inline\">\\(MD^2 = MB \\cdot\nMC\\)<\/span>.<\/p>"}, {"label": "Ý 3", "text": "<p>Gọi <span class=\"math inline\">\\(H, K\\)<\/span> là hình chiếu của\n<span class=\"math inline\">\\(N\\)<\/span> lên <span\nclass=\"math inline\">\\(AB\\)<\/span> và <span\nclass=\"math inline\">\\(AC\\)<\/span>. Chứng minh ba điểm <span\nclass=\"math inline\">\\(H, I, K\\)<\/span> thẳng hàng.<\/p>"}], "solution": "<ol>\n<li><p>Xét <span class=\"math inline\">\\(\\triangle OBC\\)<\/span> cân tại\n<span class=\"math inline\">\\(O\\)<\/span> (vì <span\nclass=\"math inline\">\\(OB = OC = R\\)<\/span>) có <span\nclass=\"math inline\">\\(OI\\)<\/span> là đường trung tuyến (do <span\nclass=\"math inline\">\\(I\\)<\/span> là trung điểm của <span\nclass=\"math inline\">\\(BC\\)<\/span>) nên <span\nclass=\"math inline\">\\(OI\\)<\/span> đồng thời là đường phân giác của <span\nclass=\"math inline\">\\(\\widehat{BOC}\\)<\/span>.<br />\nSuy ra <span class=\"math inline\">\\(\\widehat{BON} =\n\\widehat{CON}\\)<\/span>, do đó <span\nclass=\"math inline\">\\(\\text{sđ}\\wideparen{NB} =\n\\text{sđ}\\wideparen{NC}\\)<\/span> (hai cung nhỏ).<br />\nXét đường tròn <span class=\"math inline\">\\((O)\\)<\/span> có <span\nclass=\"math inline\">\\(\\widehat{BAN}\\)<\/span> và <span\nclass=\"math inline\">\\(\\widehat{CAN}\\)<\/span> là hai góc nội tiếp lần\nlượt chắn hai cung nhỏ <span class=\"math inline\">\\(NB\\)<\/span> và <span\nclass=\"math inline\">\\(NC\\)<\/span>.<br />\nVì <span class=\"math inline\">\\(\\text{sđ}\\wideparen{NB} =\n\\text{sđ}\\wideparen{NC}\\)<\/span> nên <span\nclass=\"math inline\">\\(\\widehat{BAN} = \\widehat{CAN}\\)<\/span>, hay <span\nclass=\"math inline\">\\(\\widehat{BAD} = \\widehat{CAD}\\)<\/span>.<br />\nMặt khác, tia <span class=\"math inline\">\\(AD\\)<\/span> nằm giữa hai tia\n<span class=\"math inline\">\\(AB\\)<\/span> và <span\nclass=\"math inline\">\\(AC\\)<\/span> nên <span\nclass=\"math inline\">\\(AD\\)<\/span> là tia phân giác của <span\nclass=\"math inline\">\\(\\widehat{BAC}\\)<\/span>.<\/p><\/li>\n<li><p>Xét <span class=\"math inline\">\\(\\triangle MAB\\)<\/span> và <span\nclass=\"math inline\">\\(\\triangle MCA\\)<\/span> có:<\/p>\n<ul>\n<li><p><span class=\"math inline\">\\(\\widehat{AMC}\\)<\/span>\nchung;<\/p><\/li>\n<li><p><span class=\"math inline\">\\(\\widehat{MAB} =\n\\widehat{MCA}\\)<\/span> (góc tạo bởi tia tiếp tuyến và dây cung và góc\nnội tiếp cùng chắn cung nhỏ <span class=\"math inline\">\\(AB\\)<\/span> của\n<span class=\"math inline\">\\((O)\\)<\/span>).<\/p><\/li>\n<\/ul>\n<p>Do đó <span class=\"math inline\">\\(\\triangle MAB \\backsim \\triangle\nMCA\\)<\/span> (g.g), suy ra:<\/p>\n<p><span class=\"math display\">\\[\\begin{aligned}\n\\dfrac{MA}{MC} = \\dfrac{MB}{MA} \\Rightarrow MA^2 = MB \\cdot MC. \\quad\n(1)\n\\end{aligned}\\]<\/span><\/p>\n<p>Ta có <span class=\"math inline\">\\(\\widehat{MAD} = \\widehat{MAB} +\n\\widehat{BAD}\\)<\/span> (vì tia <span class=\"math inline\">\\(AB\\)<\/span>\nnằm giữa hai tia <span class=\"math inline\">\\(AM\\)<\/span> và <span\nclass=\"math inline\">\\(AD\\)<\/span>).<br />\nLại có <span class=\"math inline\">\\(\\widehat{MDA}\\)<\/span> là góc ngoài\ntại đỉnh <span class=\"math inline\">\\(D\\)<\/span> của <span\nclass=\"math inline\">\\(\\triangle ADC\\)<\/span> nên <span\nclass=\"math inline\">\\(\\widehat{MDA} = \\widehat{ACD} + \\widehat{CAD} =\n\\widehat{MCA} + \\widehat{CAD}\\)<\/span>.<br />\nMà <span class=\"math inline\">\\(\\widehat{MAB} = \\widehat{MCA}\\)<\/span>\n(chứng minh trên) và <span class=\"math inline\">\\(\\widehat{BAD} =\n\\widehat{CAD}\\)<\/span> (do <span class=\"math inline\">\\(AD\\)<\/span> là\ntia phân giác của <span\nclass=\"math inline\">\\(\\widehat{BAC}\\)<\/span>).<br />\nSuy ra <span class=\"math inline\">\\(\\widehat{MAD} =\n\\widehat{MDA}\\)<\/span>, do đó <span class=\"math inline\">\\(\\triangle\nMAD\\)<\/span> cân tại <span class=\"math inline\">\\(M \\Rightarrow MD =\nMA\\)<\/span>. <span class=\"math inline\">\\((2)\\)<\/span><br />\nTừ <span class=\"math inline\">\\((1)\\)<\/span> và <span\nclass=\"math inline\">\\((2)\\)<\/span> suy ra <span\nclass=\"math inline\">\\(MD^2 = MB \\cdot MC\\)<\/span>.<\/p><\/li>\n<li><p>Vì <span class=\"math inline\">\\(\\triangle OBC\\)<\/span> cân tại\n<span class=\"math inline\">\\(O\\)<\/span> có <span\nclass=\"math inline\">\\(OI\\)<\/span> là đường trung tuyến nên <span\nclass=\"math inline\">\\(OI \\perp BC\\)<\/span> tại <span\nclass=\"math inline\">\\(I\\)<\/span>.<br />\nTheo giả thiết, <span class=\"math inline\">\\(NH \\perp AB\\)<\/span> tại\n<span class=\"math inline\">\\(H\\)<\/span> và <span class=\"math inline\">\\(NK\n\\perp AC\\)<\/span> tại <span class=\"math inline\">\\(K\\)<\/span>, suy ra\n<span class=\"math inline\">\\(\\widehat{NHB} = \\widehat{NIB} =\n\\widehat{NKC} = \\widehat{NIC} = 90^\\circ\\)<\/span>.<br />\nXét tứ giác <span class=\"math inline\">\\(BHNI\\)<\/span> có <span\nclass=\"math inline\">\\(\\widehat{NHB} + \\widehat{NIB} = 90^\\circ +\n90^\\circ = 180^\\circ\\)<\/span> nên tứ giác <span\nclass=\"math inline\">\\(BHNI\\)<\/span> nội tiếp đường tròn đường kính <span\nclass=\"math inline\">\\(NB\\)<\/span>.<br />\nSuy ra <span class=\"math inline\">\\(\\widehat{BIH} =\n\\widehat{BNH}\\)<\/span> (hai góc nội tiếp cùng chắn cung <span\nclass=\"math inline\">\\(BH\\)<\/span>).<br />\nTrong <span class=\"math inline\">\\(\\triangle BHN\\)<\/span> vuông tại <span\nclass=\"math inline\">\\(H\\)<\/span>, ta có <span\nclass=\"math inline\">\\(\\widehat{BNH} = 90^\\circ - \\widehat{HBN} =\n90^\\circ - \\left(180^\\circ - \\widehat{ABN}\\right) = \\widehat{ABN} -\n90^\\circ\\)<\/span>.<br />\nDo đó <span class=\"math inline\">\\(\\widehat{BIH} = \\widehat{ABN} -\n90^\\circ\\)<\/span>. <span class=\"math inline\">\\((3)\\)<\/span><br />\nXét tứ giác <span class=\"math inline\">\\(CINK\\)<\/span> có <span\nclass=\"math inline\">\\(\\widehat{NIC} = \\widehat{NKC} = 90^\\circ\\)<\/span>\nnên hai đỉnh <span class=\"math inline\">\\(I, K\\)<\/span> cùng nhìn đoạn\n<span class=\"math inline\">\\(NC\\)<\/span> dưới một góc vuông, suy ra tứ\ngiác <span class=\"math inline\">\\(CINK\\)<\/span> nội tiếp đường tròn đường\nkính <span class=\"math inline\">\\(NC\\)<\/span>.<br />\nSuy ra <span class=\"math inline\">\\(\\widehat{CIK} =\n\\widehat{CNK}\\)<\/span> (hai góc nội tiếp cùng chắn cung <span\nclass=\"math inline\">\\(CK\\)<\/span>).<br />\nTrong <span class=\"math inline\">\\(\\triangle CKN\\)<\/span> vuông tại <span\nclass=\"math inline\">\\(K\\)<\/span>, ta có <span\nclass=\"math inline\">\\(\\widehat{CNK} = 90^\\circ - \\widehat{KCN} =\n90^\\circ - \\widehat{ACN}\\)<\/span>.<br />\nDo đó <span class=\"math inline\">\\(\\widehat{CIK} = 90^\\circ -\n\\widehat{ACN}\\)<\/span>. <span class=\"math inline\">\\((4)\\)<\/span><br />\nMặt khác, tứ giác <span class=\"math inline\">\\(ABNC\\)<\/span> nội tiếp\nđường tròn <span class=\"math inline\">\\((O)\\)<\/span> nên <span\nclass=\"math inline\">\\(\\widehat{ABN} + \\widehat{ACN} = 180^\\circ\n\\Rightarrow \\widehat{ABN} - 90^\\circ = 90^\\circ -\n\\widehat{ACN}\\)<\/span>. <span class=\"math inline\">\\((5)\\)<\/span><br />\nTừ <span class=\"math inline\">\\((3)\\)<\/span>, <span\nclass=\"math inline\">\\((4)\\)<\/span> và <span\nclass=\"math inline\">\\((5)\\)<\/span> suy ra <span\nclass=\"math inline\">\\(\\widehat{BIH} = \\widehat{CIK}\\)<\/span>.<br />\nVì <span class=\"math inline\">\\(I\\)<\/span> nằm giữa <span\nclass=\"math inline\">\\(B, C\\)<\/span> và hai điểm <span\nclass=\"math inline\">\\(H, K\\)<\/span> nằm khác phía đối với đường thẳng\n<span class=\"math inline\">\\(BC\\)<\/span> nên <span\nclass=\"math inline\">\\(\\widehat{BIH}\\)<\/span> và <span\nclass=\"math inline\">\\(\\widehat{CIK}\\)<\/span> là hai góc đối đỉnh.<br />\nVậy ba điểm <span class=\"math inline\">\\(H, I, K\\)<\/span> thẳng\nhàng.<\/p><\/li>\n<\/ol>"}, {"id": 5, "isCoverSlide": false, "isTheorySlide": false, "title": "Bài 5", "type": "Essay", "level": "M2", "question": "<p>Cho đường tròn <span class=\"math inline\">\\((O; R)\\)<\/span> và <span\nclass=\"math inline\">\\((O&#39;; R&#39;)\\)<\/span> tiếp xúc ngoài với nhau\ntại <span class=\"math inline\">\\(A\\)<\/span>. Qua <span\nclass=\"math inline\">\\(A\\)<\/span> vẽ đường thẳng cắt <span\nclass=\"math inline\">\\((O)\\)<\/span> tại <span\nclass=\"math inline\">\\(B\\)<\/span> và cắt <span\nclass=\"math inline\">\\((O&#39;)\\)<\/span> tại <span\nclass=\"math inline\">\\(C\\)<\/span>.<\/p>\n<ol>\n<li><p>Chứng minh rằng <span class=\"math inline\">\\(OB\\)<\/span> song song\nvới <span class=\"math inline\">\\(O&#39;C\\)<\/span>.<\/p><\/li>\n<li><p>Chứng tỏ tỉ số diện tích hai hình quạt nằm trong góc ở tâm <span\nclass=\"math inline\">\\(\\widehat{AOB}\\)<\/span> và <span\nclass=\"math inline\">\\(\\widehat{AO&#39;C}\\)<\/span> của hai hình tròn\nkhông đổi khi cát tuyến <span class=\"math inline\">\\(BAC\\)<\/span> quay\nquanh <span class=\"math inline\">\\(A\\)<\/span>.<\/p><\/li>\n<\/ol>\n<div class=\"center\">\n<p><div onclick=\"openFigureZoom(this)\" title=\"Chạm để phóng to hình vẽ\" class=\"tikz-container group relative w-full flex flex-col items-center justify-center my-2 cursor-zoom-in\"><svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 254.249 167.145\" style=\"width: 100%; max-width: 390px; height: auto; display: block;\">\n<defs>\n<g>\n<g id=\"glyph-0-0\">\n<path d=\"M 7.328125 -4.3125 C 7.328125 -5.90625 6.28125 -6.984375 4.796875 -6.984375 C 2.671875 -6.984375 0.484375 -4.734375 0.484375 -2.421875 C 0.484375 -0.78125 1.59375 0.21875 3.015625 0.21875 C 5.125 0.21875 7.328125 -1.953125 7.328125 -4.3125 Z M 3.078125 -0.046875 C 2.09375 -0.046875 1.40625 -0.84375 1.40625 -2.15625 C 1.40625 -2.578125 1.546875 -4.03125 2.3125 -5.1875 C 2.984375 -6.21875 3.96875 -6.734375 4.75 -6.734375 C 5.5625 -6.734375 6.453125 -6.1875 6.453125 -4.703125 C 6.453125 -4 6.1875 -2.453125 5.203125 -1.234375 C 4.71875 -0.625 3.90625 -0.046875 3.078125 -0.046875 Z M 3.078125 -0.046875 \"/>\n<\/g>\n<g id=\"glyph-0-1\">\n<path d=\"M 1.765625 -1.140625 C 1.375 -0.46875 0.984375 -0.34375 0.5625 -0.3125 C 0.4375 -0.296875 0.34375 -0.296875 0.34375 -0.109375 C 0.34375 -0.046875 0.390625 0 0.46875 0 C 0.75 0 1.046875 -0.03125 1.328125 -0.03125 C 1.65625 -0.03125 2 0 2.3125 0 C 2.375 0 2.5 0 2.5 -0.1875 C 2.5 -0.296875 2.421875 -0.3125 2.34375 -0.3125 C 2.125 -0.328125 1.875 -0.40625 1.875 -0.65625 C 1.875 -0.765625 1.9375 -0.875 2.015625 -1.015625 L 2.78125 -2.28125 L 5.265625 -2.28125 C 5.28125 -2.078125 5.421875 -0.734375 5.421875 -0.640625 C 5.421875 -0.34375 4.90625 -0.3125 4.703125 -0.3125 C 4.5625 -0.3125 4.46875 -0.3125 4.46875 -0.109375 C 4.46875 0 4.59375 0 4.609375 0 C 5.015625 0 5.4375 -0.03125 5.84375 -0.03125 C 6.09375 -0.03125 6.71875 0 6.96875 0 C 7.03125 0 7.140625 0 7.140625 -0.203125 C 7.140625 -0.3125 7.046875 -0.3125 6.921875 -0.3125 C 6.296875 -0.3125 6.296875 -0.375 6.265625 -0.65625 L 5.671875 -6.859375 C 5.640625 -7.046875 5.640625 -7.09375 5.484375 -7.09375 C 5.3125 -7.09375 5.28125 -7.03125 5.21875 -6.921875 Z M 2.96875 -2.59375 L 4.90625 -5.859375 L 5.234375 -2.59375 Z M 2.96875 -2.59375 \"/>\n<\/g>\n<g id=\"glyph-0-2\">\n<path d=\"M 1.578125 -0.765625 C 1.484375 -0.390625 1.46875 -0.3125 0.6875 -0.3125 C 0.515625 -0.3125 0.421875 -0.3125 0.421875 -0.109375 C 0.421875 0 0.5 0 0.6875 0 L 4.21875 0 C 5.78125 0 6.953125 -1.171875 6.953125 -2.140625 C 6.953125 -2.859375 6.375 -3.421875 5.421875 -3.53125 C 6.453125 -3.71875 7.484375 -4.453125 7.484375 -5.40625 C 7.484375 -6.125 6.828125 -6.765625 5.640625 -6.765625 L 2.3125 -6.765625 C 2.125 -6.765625 2.03125 -6.765625 2.03125 -6.5625 C 2.03125 -6.453125 2.125 -6.453125 2.3125 -6.453125 C 2.328125 -6.453125 2.515625 -6.453125 2.6875 -6.4375 C 2.859375 -6.421875 2.953125 -6.40625 2.953125 -6.28125 C 2.953125 -6.234375 2.9375 -6.21875 2.90625 -6.09375 Z M 3.078125 -3.625 L 3.6875 -6.078125 C 3.78125 -6.421875 3.796875 -6.453125 4.234375 -6.453125 L 5.515625 -6.453125 C 6.375 -6.453125 6.59375 -5.875 6.59375 -5.4375 C 6.59375 -4.5625 5.734375 -3.625 4.53125 -3.625 Z M 2.640625 -0.3125 C 2.5 -0.3125 2.484375 -0.3125 2.421875 -0.3125 C 2.3125 -0.328125 2.28125 -0.34375 2.28125 -0.421875 C 2.28125 -0.453125 2.28125 -0.46875 2.34375 -0.640625 L 3.015625 -3.40625 L 4.890625 -3.40625 C 5.84375 -3.40625 6.03125 -2.671875 6.03125 -2.25 C 6.03125 -1.265625 5.15625 -0.3125 3.984375 -0.3125 Z M 2.640625 -0.3125 \"/>\n<\/g>\n<g id=\"glyph-0-3\">\n<path d=\"M 7.53125 -6.890625 C 7.53125 -6.921875 7.515625 -6.984375 7.421875 -6.984375 C 7.390625 -6.984375 7.375 -6.96875 7.265625 -6.859375 L 6.578125 -6.109375 C 6.484375 -6.234375 6.03125 -6.984375 4.9375 -6.984375 C 2.71875 -6.984375 0.5 -4.796875 0.5 -2.5 C 0.5 -0.859375 1.671875 0.21875 3.1875 0.21875 C 4.046875 0.21875 4.796875 -0.171875 5.3125 -0.640625 C 6.234375 -1.453125 6.40625 -2.34375 6.40625 -2.375 C 6.40625 -2.484375 6.3125 -2.484375 6.296875 -2.484375 C 6.234375 -2.484375 6.1875 -2.453125 6.15625 -2.375 C 6.078125 -2.09375 5.84375 -1.390625 5.15625 -0.8125 C 4.484375 -0.25 3.859375 -0.09375 3.34375 -0.09375 C 2.453125 -0.09375 1.390625 -0.609375 1.390625 -2.15625 C 1.390625 -2.71875 1.609375 -4.3125 2.59375 -5.484375 C 3.203125 -6.1875 4.125 -6.671875 5.015625 -6.671875 C 6.015625 -6.671875 6.609375 -5.90625 6.609375 -4.765625 C 6.609375 -4.375 6.578125 -4.359375 6.578125 -4.265625 C 6.578125 -4.15625 6.6875 -4.15625 6.71875 -4.15625 C 6.859375 -4.15625 6.859375 -4.1875 6.90625 -4.359375 Z M 7.53125 -6.890625 \"/>\n<\/g>\n<g id=\"glyph-1-0\">\n<path d=\"M 2.015625 -3.28125 C 2.0625 -3.390625 2.078125 -3.453125 2.078125 -3.5 C 2.078125 -3.71875 1.875 -3.875 1.671875 -3.875 C 1.40625 -3.875 1.3125 -3.65625 1.28125 -3.546875 L 0.375 -0.546875 C 0.359375 -0.53125 0.328125 -0.4375 0.328125 -0.4375 C 0.328125 -0.359375 0.546875 -0.28125 0.609375 -0.28125 C 0.65625 -0.28125 0.65625 -0.296875 0.703125 -0.40625 Z M 2.015625 -3.28125 \"/>\n<\/g>\n<\/g>\n<\/defs>\n<path fill=\"none\" stroke-width=\"0.19925\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke=\"rgb(50%, 50%, 50%)\" stroke-opacity=\"1\" stroke-miterlimit=\"10\" d=\"M 70.865499 -0.00164794 C 70.865499 39.138956 39.13762 70.866835 0.000942475 70.866835 C -39.139661 70.866835 -70.86754 39.138956 -70.86754 -0.00164794 C -70.86754 -39.138326 -39.139661 -70.866204 0.000942475 -70.866204 C 39.13762 -70.866204 70.865499 -39.138326 70.865499 -0.00164794 Z M 70.865499 -0.00164794 \" transform=\"matrix(0.994911, 0, 0, -0.994911, 78.807656, 87.760079)\"/>\n<path fill=\"none\" stroke-width=\"0.19925\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke=\"rgb(50%, 50%, 50%)\" stroke-opacity=\"1\" stroke-miterlimit=\"10\" d=\"M 167.246635 -0.00164794 C 167.246635 26.614277 145.671992 48.18892 119.056067 48.18892 C 92.440142 48.18892 70.865499 26.614277 70.865499 -0.00164794 C 70.865499 -26.613647 92.440142 -48.18829 119.056067 -48.18829 C 145.671992 -48.18829 167.246635 -26.613647 167.246635 -0.00164794 Z M 167.246635 -0.00164794 \" transform=\"matrix(0.994911, 0, 0, -0.994911, 78.807656, 87.760079)\"/>\n<path fill=\"none\" stroke-width=\"0.19925\" stroke-linecap=\"round\" stroke-linejoin=\"miter\" stroke=\"rgb(0%, 0%, 0%)\" stroke-opacity=\"1\" stroke-miterlimit=\"10\" d=\"M 0.000942475 -0.00164794 L 119.056067 -0.00164794 \" transform=\"matrix(0.994911, 0, 0, -0.994911, 78.807656, 87.760079)\"/>\n<path fill=\"none\" stroke-width=\"0.19925\" stroke-linecap=\"round\" stroke-linejoin=\"miter\" stroke=\"rgb(0%, 0%, 0%)\" stroke-opacity=\"1\" stroke-miterlimit=\"10\" d=\"M -24.239612 66.595094 L 135.538388 -45.282878 \" transform=\"matrix(0.994911, 0, 0, -0.994911, 78.807656, 87.760079)\"/>\n<path fill=\"none\" stroke-width=\"0.19925\" stroke-linecap=\"round\" stroke-linejoin=\"miter\" stroke=\"rgb(0%, 0%, 0%)\" stroke-opacity=\"1\" stroke-miterlimit=\"10\" d=\"M 0.000942475 -0.00164794 L -24.239612 66.595094 \" transform=\"matrix(0.994911, 0, 0, -0.994911, 78.807656, 87.760079)\"/>\n<path fill=\"none\" stroke-width=\"0.19925\" stroke-linecap=\"round\" stroke-linejoin=\"miter\" stroke=\"rgb(0%, 0%, 0%)\" stroke-opacity=\"1\" stroke-miterlimit=\"10\" d=\"M 119.056067 -0.00164794 L 135.538388 -45.282878 \" transform=\"matrix(0.994911, 0, 0, -0.994911, 78.807656, 87.760079)\"/>\n<path fill-rule=\"nonzero\" fill=\"rgb(0%, 0%, 0%)\" fill-opacity=\"1\" stroke-width=\"0.3985\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke=\"rgb(0%, 0%, 0%)\" stroke-opacity=\"1\" stroke-miterlimit=\"10\" d=\"M 1.096361 -0.00164794 C 1.096361 0.606918 0.605582 1.097697 0.000942475 1.097697 C -0.603697 1.097697 -1.094476 0.606918 -1.094476 -0.00164794 C -1.094476 -0.606288 -0.603697 -1.097067 0.000942475 -1.097067 C 0.605582 -1.097067 1.096361 -0.606288 1.096361 -0.00164794 Z M 1.096361 -0.00164794 \" transform=\"matrix(0.994911, 0, 0, -0.994911, 78.807656, 87.760079)\"/>\n<path fill-rule=\"nonzero\" fill=\"rgb(0%, 0%, 0%)\" fill-opacity=\"1\" stroke-width=\"0.3985\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke=\"rgb(0%, 0%, 0%)\" stroke-opacity=\"1\" stroke-miterlimit=\"10\" d=\"M 120.151485 -0.00164794 C 120.151485 0.606918 119.660706 1.097697 119.056067 1.097697 C 118.451427 1.097697 117.960648 0.606918 117.960648 -0.00164794 C 117.960648 -0.606288 118.451427 -1.097067 119.056067 -1.097067 C 119.660706 -1.097067 120.151485 -0.606288 120.151485 -0.00164794 Z M 120.151485 -0.00164794 \" transform=\"matrix(0.994911, 0, 0, -0.994911, 78.807656, 87.760079)\"/>\n<path fill-rule=\"nonzero\" fill=\"rgb(0%, 0%, 0%)\" fill-opacity=\"1\" stroke-width=\"0.3985\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke=\"rgb(0%, 0%, 0%)\" stroke-opacity=\"1\" stroke-miterlimit=\"10\" d=\"M 71.964844 -0.00164794 C 71.964844 0.606918 71.474065 1.097697 70.865499 1.097697 C 70.260859 1.097697 69.77008 0.606918 69.77008 -0.00164794 C 69.77008 -0.606288 70.260859 -1.097067 70.865499 -1.097067 C 71.474065 -1.097067 71.964844 -0.606288 71.964844 -0.00164794 Z M 71.964844 -0.00164794 \" transform=\"matrix(0.994911, 0, 0, -0.994911, 78.807656, 87.760079)\"/>\n<path fill-rule=\"nonzero\" fill=\"rgb(0%, 0%, 0%)\" fill-opacity=\"1\" stroke-width=\"0.3985\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke=\"rgb(0%, 0%, 0%)\" stroke-opacity=\"1\" stroke-miterlimit=\"10\" d=\"M -23.144193 66.595094 C -23.144193 67.199734 -23.634972 67.690513 -24.239612 67.690513 C -24.844252 67.690513 -25.335031 67.199734 -25.335031 66.595094 C -25.335031 65.986528 -24.844252 65.49575 -24.239612 65.49575 C -23.634972 65.49575 -23.144193 65.986528 -23.144193 66.595094 Z M -23.144193 66.595094 \" transform=\"matrix(0.994911, 0, 0, -0.994911, 78.807656, 87.760079)\"/>\n<path fill-rule=\"nonzero\" fill=\"rgb(0%, 0%, 0%)\" fill-opacity=\"1\" stroke-width=\"0.3985\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke=\"rgb(0%, 0%, 0%)\" stroke-opacity=\"1\" stroke-miterlimit=\"10\" d=\"M 136.633806 -45.282878 C 136.633806 -44.678239 136.143027 -44.18746 135.538388 -44.18746 C 134.933748 -44.18746 134.442969 -44.678239 134.442969 -45.282878 C 134.442969 -45.887518 134.933748 -46.378297 135.538388 -46.378297 C 136.143027 -46.378297 136.633806 -45.887518 136.633806 -45.282878 Z M 136.633806 -45.282878 \" transform=\"matrix(0.994911, 0, 0, -0.994911, 78.807656, 87.760079)\"/>\n<g fill=\"rgb(0%, 0%, 0%)\" fill-opacity=\"1\">\n<use xlink:href=\"#glyph-0-0\" x=\"67.470648\" y=\"98.034522\"/>\n<\/g>\n<g fill=\"rgb(0%, 0%, 0%)\" fill-opacity=\"1\">\n<use xlink:href=\"#glyph-0-0\" x=\"200.757842\" y=\"84.258988\"/>\n<\/g>\n<g fill=\"rgb(0%, 0%, 0%)\" fill-opacity=\"1\">\n<use xlink:href=\"#glyph-1-0\" x=\"208.593759\" y=\"80.662386\"/>\n<\/g>\n<g fill=\"rgb(0%, 0%, 0%)\" fill-opacity=\"1\">\n<use xlink:href=\"#glyph-0-1\" x=\"152.81409\" y=\"84.258988\"/>\n<\/g>\n<g fill=\"rgb(0%, 0%, 0%)\" fill-opacity=\"1\">\n<use xlink:href=\"#glyph-0-2\" x=\"50.68551\" y=\"18.004899\"/>\n<\/g>\n<g fill=\"rgb(0%, 0%, 0%)\" fill-opacity=\"1\">\n<use xlink:href=\"#glyph-0-3\" x=\"209.757804\" y=\"143.087064\"/>\n<\/g>\n<\/svg><span class=\"tikz-zoom-badge mt-1 inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-slate-800/80 text-slate-200 opacity-80 group-hover:opacity-100\"><i class=\"fa-solid fa-magnifying-glass-plus\"><\/i> Chạm phóng to<\/span><\/div><\/p>\n<\/div>", "options": [], "correctIndex": 0, "tfItems": [], "correctAnswer": "", "essayItems": [{"label": "Ý 1", "text": "<p>Chứng minh rằng <span class=\"math inline\">\\(OB\\)<\/span> song song\nvới <span class=\"math inline\">\\(O&#39;C\\)<\/span>.<\/p>"}, {"label": "Ý 2", "text": "<p>Chứng tỏ tỉ số diện tích hai hình quạt nằm trong góc ở tâm <span\nclass=\"math inline\">\\(\\widehat{AOB}\\)<\/span> và <span\nclass=\"math inline\">\\(\\widehat{AO&#39;C}\\)<\/span> của hai hình tròn\nkhông đổi khi cát tuyến <span class=\"math inline\">\\(BAC\\)<\/span> quay\nquanh <span class=\"math inline\">\\(A\\)<\/span>.<\/p>"}], "solution": "<ol>\n<li><p>Vì hai đường tròn <span class=\"math inline\">\\((O; R)\\)<\/span> và\n<span class=\"math inline\">\\((O&#39;; R&#39;)\\)<\/span> tiếp xúc ngoài tại\n<span class=\"math inline\">\\(A\\)<\/span> nên ba điểm <span\nclass=\"math inline\">\\(O, A, O&#39;\\)<\/span> thẳng hàng (<span\nclass=\"math inline\">\\(A\\)<\/span> nằm giữa <span\nclass=\"math inline\">\\(O\\)<\/span> và <span\nclass=\"math inline\">\\(O&#39;\\)<\/span>).<br />\nXét <span class=\"math inline\">\\(\\triangle OAB\\)<\/span> có <span\nclass=\"math inline\">\\(OA = OB = R\\)<\/span> nên <span\nclass=\"math inline\">\\(\\triangle OAB\\)<\/span> cân tại <span\nclass=\"math inline\">\\(O \\Rightarrow \\widehat{OBA} =\n\\widehat{OAB}\\)<\/span>.<br />\nXét <span class=\"math inline\">\\(\\triangle O&#39;AC\\)<\/span> có <span\nclass=\"math inline\">\\(O&#39;A = O&#39;C = R&#39;\\)<\/span> nên <span\nclass=\"math inline\">\\(\\triangle O&#39;AC\\)<\/span> cân tại <span\nclass=\"math inline\">\\(O&#39; \\Rightarrow \\widehat{O&#39;CA} =\n\\widehat{O&#39;AC}\\)<\/span>.<br />\nMà <span class=\"math inline\">\\(\\widehat{OAB} =\n\\widehat{O&#39;AC}\\)<\/span> (hai góc đối đỉnh).<br />\nSuy ra <span class=\"math inline\">\\(\\widehat{OBA} =\n\\widehat{O&#39;CA}\\)<\/span>.<br />\nHai góc này ở vị trí so le trong nên <span class=\"math inline\">\\(OB\n\\parallel O&#39;C\\)<\/span>.<\/p><\/li>\n<li><p>Gọi <span class=\"math inline\">\\(n^\\circ\\)<\/span> là số đo góc ở\ntâm <span class=\"math inline\">\\(\\widehat{AOB}\\)<\/span>.<br />\nVì <span class=\"math inline\">\\(OB \\parallel O&#39;C\\)<\/span> nên <span\nclass=\"math inline\">\\(\\widehat{AO&#39;C} = \\widehat{AOB} =\nn^\\circ\\)<\/span> (hai góc so le trong).<br />\nDiện tích hình quạt tròn <span class=\"math inline\">\\(AOB\\)<\/span> của\nđường tròn <span class=\"math inline\">\\((O; R)\\)<\/span> là <span\nclass=\"math inline\">\\(S_1 = \\dfrac{\\pi R^2 n}{360}\\)<\/span>.<br />\nDiện tích hình quạt tròn <span class=\"math inline\">\\(AO&#39;C\\)<\/span>\ncủa đường tròn <span class=\"math inline\">\\((O&#39;; R&#39;)\\)<\/span> là\n<span class=\"math inline\">\\(S_2 = \\dfrac{\\pi R&#39;^2\nn}{360}\\)<\/span>.<br />\nTỉ số diện tích của hai hình quạt là:<\/p>\n<p><span class=\"math display\">\\[\\begin{aligned}\n\\dfrac{S_1}{S_2} = \\dfrac{\\dfrac{\\pi R^2 n}{360}}{\\dfrac{\\pi R&#39;^2\nn}{360}} = \\dfrac{R^2}{R&#39;^2}.\n\\end{aligned}\\]<\/span><\/p>\n<p>Vì <span class=\"math inline\">\\(R\\)<\/span> và <span\nclass=\"math inline\">\\(R&#39;\\)<\/span> là bán kính của hai đường tròn cố\nđịnh đã cho nên tỉ số <span\nclass=\"math inline\">\\(\\dfrac{R^2}{R&#39;^2}\\)<\/span> không đổi khi cát\ntuyến <span class=\"math inline\">\\(BAC\\)<\/span> quay quanh <span\nclass=\"math inline\">\\(A\\)<\/span>.<\/p><\/li>\n<\/ol>"}];
+    const IS_STUDENT = true;
+    const LOCK_SOLUTION = true;
+    const INITIAL_TIMER_SECONDS = 5400;
+    let timerSeconds = INITIAL_TIMER_SECONDS;
+    let timerRunning = false;
+
+    const STORAGE_KEY = 'extest_promax_state_' + encodeURIComponent((EXAM_INFO.examName || 'exam') + '_' + (EXAM_INFO.examCode || '101'));
+
+    let currentIndex = 0;
+    let userAnswers = {};
+    let showSol = false;
+    let studentData = { name: "", studentClass: "", sbd: "" };
+    let currentThemeIndex = 0;
+    const themes = ["cyber", "aurora", "pearl"];
+    const themeIcons = ["🌙", "🔮", "☀️"];
+    const themeLabels = ["Cyber", "Aurora", "Ngọc Trai"];
+
+    function showToast(msg) {
+      const t = document.getElementById('ios-toast');
+      if (!t) return;
+      t.innerText = msg;
+      t.classList.remove('opacity-0');
+      clearTimeout(window._toastTimer);
+      window._toastTimer = setTimeout(() => t.classList.add('opacity-0'), 2800);
+    }
+
+    function saveStateToStorage() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify({
+          currentIndex,
+          userAnswers,
+          studentData,
+          timerSeconds,
+          timerRunning,
+          themeIndex: currentThemeIndex
+        }));
+      } catch (e) {}
+    }
+
+    function loadStateFromStorage() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (!raw) return;
+        const st = JSON.parse(raw);
+        if (st && typeof st === 'object') {
+          if (typeof st.currentIndex === 'number' && st.currentIndex >= 0 && st.currentIndex < SLIDES.length) {
+            currentIndex = st.currentIndex;
+          }
+          if (st.userAnswers && typeof st.userAnswers === 'object') {
+            userAnswers = st.userAnswers;
+          }
+          if (st.studentData && typeof st.studentData === 'object') {
+            studentData = st.studentData;
+          }
+          if (typeof st.timerSeconds === 'number' && st.timerSeconds > 0) {
+            timerSeconds = st.timerSeconds;
+          }
+          if (typeof st.timerRunning === 'boolean') {
+            timerRunning = st.timerRunning;
+          }
+          if (typeof st.themeIndex === 'number') {
+            currentThemeIndex = st.themeIndex % 3;
+            document.body.setAttribute('data-theme', themes[currentThemeIndex]);
+            document.getElementById('theme-btn-icon').innerText = themeIcons[currentThemeIndex];
+            document.getElementById('theme-btn-label').innerText = themeLabels[currentThemeIndex];
+          }
+        }
+      } catch (e) {}
+    }
+
+    function resetExamProgress() {
+      userAnswers = {};
+      currentIndex = 0;
+      showSol = false;
+      timerSeconds = INITIAL_TIMER_SECONDS;
+      timerRunning = false;
+      try { localStorage.removeItem(STORAGE_KEY); } catch (e) {}
+      renderSlide();
+      toggleTocDrawer();
+      showToast("Đã đặt lại toàn bộ bài làm!");
+    }
+
+    function cycleTheme() {
+      currentThemeIndex = (currentThemeIndex + 1) % 3;
+      document.body.setAttribute('data-theme', themes[currentThemeIndex]);
+      document.getElementById('theme-btn-icon').innerText = themeIcons[currentThemeIndex];
+      document.getElementById('theme-btn-label').innerText = themeLabels[currentThemeIndex];
+      saveStateToStorage();
+    }
+
+    function renderMath() {
+      setTimeout(() => {
+        if (window.MathJax && window.MathJax.typesetPromise) {
+          window.MathJax.typesetPromise().catch((err) => console.log(err));
+        }
+      }, 40);
+    }
+
+    function updateTimerDisplay() {
+      const m = Math.floor(timerSeconds / 60).toString().padStart(2, '0');
+      const s = (timerSeconds % 60).toString().padStart(2, '0');
+      document.getElementById('timer-display').innerText = m + ":" + s;
+    }
+
+    setInterval(() => {
+      if (timerRunning && timerSeconds > 0) {
+        timerSeconds--;
+        updateTimerDisplay();
+        if (timerSeconds % 5 === 0) saveStateToStorage();
+      }
+    }, 1000);
+
+    function startExamSession() {
+      const nameInp = document.getElementById('input-student-name');
+      const classInp = document.getElementById('input-student-class');
+      const sbdInp = document.getElementById('input-student-sbd');
+
+      studentData.name = nameInp ? nameInp.value.trim() : "";
+      studentData.studentClass = classInp ? classInp.value.trim() : "";
+      studentData.sbd = sbdInp ? sbdInp.value.trim() : "";
+
+      timerRunning = true;
+      if (SLIDES.length > 1) {
+        currentIndex = 1;
+        renderSlide();
+      }
+      saveStateToStorage();
+    }
+
+    function updateTocGrid() {
+      const grid = document.getElementById('toc-grid');
+      grid.innerHTML = '';
+      SLIDES.forEach((s, idx) => {
+        const btn = document.createElement('button');
+        let bgClass = "box-bg border";
+        if (s.isCoverSlide) {
+          bgClass = "bg-indigo-600/30 border-indigo-500 font-black text-indigo-300";
+        } else if (userAnswers[s.id] !== undefined && (typeof userAnswers[s.id] !== 'object' || Object.keys(userAnswers[s.id]).length > 0)) {
+          bgClass = "bg-emerald-600 text-white font-black border-emerald-500 shadow-md";
+        }
+        if (idx === currentIndex) bgClass += " ring-2 ring-indigo-400 border-indigo-400";
+
+        btn.className = `btn-touch p-2 rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all active:scale-95 ${bgClass}`;
+        btn.innerHTML = `<span>${s.title}</span>`;
+        btn.onclick = () => { currentIndex = idx; showSol = false; renderSlide(); toggleTocDrawer(); saveStateToStorage(); };
+        grid.appendChild(btn);
+      });
+    }
+
+    function renderSlide() {
+      if (SLIDES.length === 0) return;
+      const s = SLIDES[currentIndex];
+
+      document.getElementById('slide-num-badge').innerText = s.title.toUpperCase();
+      document.getElementById('slide-question').innerHTML = s.question;
+      document.getElementById('slide-solution').innerHTML = s.solution || "Chưa có lời giải chi tiết.";
+      document.getElementById('progress-indicator').innerText = (currentIndex) + " / " + (SLIDES.length - 1);
+
+      const colInter = document.getElementById('col-interactive');
+      const footerSol = document.getElementById('footer-sol-bar');
+
+      if (s.isCoverSlide) {
+        colInter.classList.add('hidden');
+        footerSol.classList.add('hidden');
+        document.getElementById('slide-type-badge').innerText = "Trang bìa & Thông tin";
+        document.getElementById('progress-indicator').innerText = "Trang Bìa";
+        setTimeout(() => {
+          const nInp = document.getElementById('input-student-name');
+          const cInp = document.getElementById('input-student-class');
+          const sInp = document.getElementById('input-student-sbd');
+          if (nInp && studentData.name) nInp.value = studentData.name;
+          if (cInp && studentData.studentClass) cInp.value = studentData.studentClass;
+          if (sInp && studentData.sbd) sInp.value = studentData.sbd;
+        }, 0);
+      } else if (s.isTheorySlide) {
+        colInter.classList.add('hidden');
+        footerSol.classList.add('hidden');
+        document.getElementById('slide-type-badge').innerText = "Tóm tắt lý thuyết / Dạng toán";
+      } else {
+        colInter.classList.remove('hidden');
+        footerSol.classList.remove('hidden');
+        const baseType = s.type === 'MCQ' ? 'Trắc nghiệm' : (s.type === 'TF' ? 'Đúng / Sai' : 'Tự luận / Đáp số');
+        document.getElementById('slide-type-badge').innerText = s.level ? `${baseType} • ${s.level}` : baseType;
+
+        const area = document.getElementById('interactive-area');
+        area.innerHTML = '';
+
+        /* ========== 1. TRẮC NGHIỆM 4 PHƯƠNG ÁN (\choice) ========== */
+        if (s.type === 'MCQ') {
+          const gridBox = document.createElement('div');
+          gridBox.className = "grid grid-cols-1 md:grid-cols-2 gap-2.5 sm:gap-3";
+
+          (s.options || []).forEach((opt, idx) => {
+            const btn = document.createElement('button');
+            const isSel = userAnswers[s.id] === idx;
+            const isCorrect = idx === s.correctIndex;
+
+            let styleClass = "w-full text-left p-3.5 sm:p-4 rounded-xl sm:rounded-2xl border text-[15px] sm:text-base font-semibold transition-all flex items-center justify-between btn-touch shadow-sm active:scale-[0.99] ";
+
+            if (showSol) {
+              if (isCorrect) {
+                styleClass += "bg-emerald-600/40 border-2 border-emerald-400 font-black text-emerald-200 ring-2 sm:ring-4 ring-emerald-500/50 shadow-lg";
+              } else if (isSel) {
+                styleClass += "bg-rose-600/40 border-2 border-rose-400 font-black text-rose-200 ring-2 sm:ring-4 ring-rose-500/50";
+              } else {
+                styleClass += "box-bg opacity-50";
+              }
+            } else {
+              if (isSel) {
+                styleClass += "bg-indigo-600/40 border-2 border-indigo-500 font-extrabold text-indigo-200 ring-2 sm:ring-4 ring-indigo-500/30 shadow-md";
+              } else {
+                styleClass += "box-bg hover:border-indigo-500/60";
+              }
+            }
+
+            let badgeHtml = "";
+            if (showSol) {
+              if (isCorrect) badgeHtml = '<span class="text-[11px] sm:text-xs px-2.5 py-1 rounded-xl bg-emerald-500 text-white font-black shadow-md ml-2 shrink-0 flex items-center gap-1"><i class="fa-solid fa-check"></i> ĐÚNG</span>';
+              else if (isSel) badgeHtml = '<span class="text-[11px] sm:text-xs px-2.5 py-1 rounded-xl bg-rose-500 text-white font-black shadow-md ml-2 shrink-0 flex items-center gap-1"><i class="fa-solid fa-xmark"></i> SAI</span>';
+            }
+
+            btn.className = styleClass;
+            btn.innerHTML = `<div class="flex-1 leading-relaxed min-w-0 break-words">${opt}</div>${badgeHtml}`;
+            btn.onclick = () => { if (!showSol) { userAnswers[s.id] = idx; saveStateToStorage(); renderSlide(); updateTocGrid(); } };
+            gridBox.appendChild(btn);
+          });
+          area.appendChild(gridBox);
+        } 
+        /* ========== 2. TRẮC NGHIỆM ĐÚNG / SAI (\choiceTF) ========== */
+        else if (s.type === 'TF') {
+          if (!userAnswers[s.id]) userAnswers[s.id] = {};
+          (s.tfItems || []).forEach((item, idx) => {
+            const row = document.createElement('div');
+            row.className = "w-full p-3 sm:p-4 rounded-xl sm:rounded-2xl box-bg border flex flex-col md:flex-row justify-between items-start md:items-center text-[15px] md:text-base gap-2.5 sm:gap-3 shadow-md";
+            const ans = userAnswers[s.id][idx];
+
+            let trueStyle = "box-bg text-slate-300 border border-slate-700/60 hover:border-indigo-500/60";
+            let falseStyle = "box-bg text-slate-300 border border-slate-700/60 hover:border-indigo-500/60";
+
+            if (showSol) {
+              if (item.correct === true) {
+                trueStyle = "bg-emerald-600 text-white font-black border-2 border-emerald-300 ring-2 ring-emerald-500/50 shadow-xl";
+                falseStyle = (ans === false) ? "bg-rose-600 text-white font-black border-2 border-rose-300 ring-2 ring-rose-500/50 shadow-xl" : "box-bg opacity-40 border border-slate-800";
+              } else {
+                falseStyle = "bg-emerald-600 text-white font-black border-2 border-emerald-300 ring-2 ring-emerald-500/50 shadow-xl";
+                trueStyle = (ans === true) ? "bg-rose-600 text-white font-black border-2 border-rose-300 ring-2 ring-rose-500/50 shadow-xl" : "box-bg opacity-40 border border-slate-800";
+              }
+            } else {
+              if (ans === true) trueStyle = "bg-indigo-600 text-white font-black border-2 border-indigo-400 ring-2 ring-indigo-500/40 shadow-md";
+              if (ans === false) falseStyle = "bg-indigo-600 text-white font-black border-2 border-indigo-400 ring-2 ring-indigo-500/40 shadow-md";
+            }
+
+            let trueBadge = (showSol && item.correct === true) ? ' <i class="fa-solid fa-check ml-1.5 text-white"></i>' : '';
+            let falseBadge = (showSol && item.correct === false) ? ' <i class="fa-solid fa-check ml-1.5 text-white"></i>' : '';
+            
+            if (showSol) {
+              if (ans === true && item.correct === false) trueBadge = ' <i class="fa-solid fa-xmark ml-1.5 text-rose-200"></i>';
+              if (ans === false && item.correct === true) falseBadge = ' <i class="fa-solid fa-xmark ml-1.5 text-rose-200"></i>';
+            }
+
+            row.innerHTML = `
+              <div class="flex-1 leading-relaxed font-semibold pr-1 min-w-0 break-words"><b class="text-indigo-400 text-base md:text-lg mr-1.5">${item.label})</b> ${item.statement}</div>
+              <div class="flex gap-2.5 sm:gap-3 shrink-0 w-full md:w-auto justify-end min-w-[200px]">
+                <button onclick="setTF(${s.id}, ${idx}, true)" class="btn-touch flex-1 md:flex-initial px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl text-sm md:text-base transition-all flex items-center justify-center font-black active:scale-95 ${trueStyle}">
+                  <span>Đúng</span>${trueBadge}
+                </button>
+                <button onclick="setTF(${s.id}, ${idx}, false)" class="btn-touch flex-1 md:flex-initial px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl text-sm md:text-base transition-all flex items-center justify-center font-black active:scale-95 ${falseStyle}">
+                  <span>Sai</span>${falseBadge}
+                </button>
+              </div>
+            `;
+            area.appendChild(row);
+          });
+        } 
+        /* ========== 3. TRẢ LỜI NGẮN (\shortans / \SA) ========== */
+        else if (s.type === 'SA') {
+          if (!userAnswers[s.id] || typeof userAnswers[s.id] !== 'object') userAnswers[s.id] = {};
+          const userVal = userAnswers[s.id][0] || "";
+
+          const wrap = document.createElement('div');
+          wrap.className = "space-y-3";
+          wrap.innerHTML = `
+            <input type="text" placeholder="Nhập đáp số..." 
+              class="ios-input w-full p-3.5 sm:p-4 rounded-xl sm:rounded-2xl box-bg border-2 border-indigo-500/40 text-base md:text-lg font-black text-amber-400 focus:outline-none focus:border-indigo-400 shadow-inner"
+              value="${userVal.replace(/"/g, '&quot;')}"
+              oninput="userAnswers[${s.id}][0] = this.value; saveStateToStorage(); updateTocGrid();"
+            />
+          `;
+          if (showSol) {
+            wrap.innerHTML += `
+              <div class="p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-emerald-500/20 border-2 border-emerald-500/50 text-emerald-300 text-sm md:text-base font-bold flex items-center gap-2.5 shadow-lg">
+                <i class="fa-solid fa-circle-check text-lg text-emerald-400"></i>
+                <span>Đáp số chuẩn: <b class="text-emerald-200 text-base md:text-lg ml-1">${s.correctAnswer}</b></span>
+              </div>
+            `;
+          }
+          area.appendChild(wrap);
+        } 
+        /* ========== 4. TỰ LUẬN (\bt) ========== */
+        else {
+          const essayList = s.essayItems && s.essayItems.length > 0 ? s.essayItems : [{label: 'Đáp số / Kết quả', text: ''}];
+          if (!userAnswers[s.id] || typeof userAnswers[s.id] !== 'object') userAnswers[s.id] = {};
+
+          essayList.forEach((item, idx) => {
+            const wrap = document.createElement('div');
+            wrap.className = "mb-2.5 sm:mb-3 space-y-1.5";
+            wrap.innerHTML = `
+              <div class="text-sm font-bold text-indigo-300">${item.label}:</div>
+              <input type="text" placeholder="Nhập kết quả cho ${item.label}..."
+                class="ios-input w-full p-3.5 sm:p-4 rounded-xl sm:rounded-2xl box-bg border-2 border-indigo-500/40 text-base md:text-lg font-black text-amber-400 focus:outline-none focus:border-indigo-400 shadow-inner"
+                value="${(userAnswers[s.id][idx] || "").replace(/"/g, '&quot;')}"
+                oninput="userAnswers[${s.id}][${idx}] = this.value; saveStateToStorage(); updateTocGrid();"
+              />
+            `;
+            area.appendChild(wrap);
+          });
+        }
+      }
+
+      const solBox = document.getElementById('solution-box');
+      const btnSol = document.getElementById('btn-sol-toggle');
+      if (showSol) {
+        solBox.classList.remove('hidden');
+        btnSol.innerHTML = '<i class="fa-solid fa-eye-slash mr-1.5"></i> Ẩn Lời giải';
+      } else {
+        solBox.classList.add('hidden');
+        btnSol.innerHTML = '<i class="fa-solid fa-lock mr-1.5"></i> Xem Lời giải';
+      }
+
+      const mainScroll = document.getElementById('main-content-scroll');
+      if (mainScroll) mainScroll.scrollTop = 0;
+
+      updateTocGrid();
+      renderMath();
+    }
+
+    function setTF(sid, idx, val) {
+      if (showSol) return;
+      if (!userAnswers[sid]) userAnswers[sid] = {};
+      userAnswers[sid][idx] = val;
+      saveStateToStorage();
+      renderSlide();
+    }
+
+    function nextSlide() { if (currentIndex < SLIDES.length - 1) { currentIndex++; showSol = false; saveStateToStorage(); renderSlide(); } }
+    function prevSlide() { if (currentIndex > 0) { currentIndex--; showSol = false; saveStateToStorage(); renderSlide(); } }
+
+    function toggleTocDrawer() {
+      const drawer = document.getElementById('toc-drawer');
+      const overlay = document.getElementById('toc-overlay');
+      const isClosed = drawer.classList.contains('translate-x-full');
+      if (isClosed) {
+        drawer.classList.remove('translate-x-full');
+        overlay.classList.remove('hidden');
+      } else {
+        drawer.classList.add('translate-x-full');
+        overlay.classList.add('hidden');
+      }
+    }
+
+    function calculateScore() {
+      let earned = 0, total = 0;
+      SLIDES.forEach(s => {
+        if (s.isTheorySlide || s.isCoverSlide) return;
+        total += 1;
+        const ans = userAnswers[s.id];
+        if (s.type === 'MCQ' && ans === s.correctIndex) earned += 1;
+        else if (s.type === 'SA' && ans && ans[0] && ans[0].trim().toLowerCase() === (s.correctAnswer||'').trim().toLowerCase()) earned += 1;
+        else if (s.type === 'TF' && ans) {
+          let itemPts = 0;
+          (s.tfItems||[]).forEach((item, i) => { if (ans[i] === item.correct) itemPts += 0.25; });
+          earned += itemPts;
+        }
+      });
+      return total > 0 ? (earned / total) * 10 : 0;
+    }
+
+    function toggleSolution() {
+      if (IS_STUDENT && LOCK_SOLUTION && !showSol) {
+        const score = calculateScore();
+        if (score < 3.0) {
+          alert("🔒 LỜI GIẢI ĐÃ BỊ KHÓA! Bạn cần đạt tối thiểu 3.0 điểm để mở xem Lời giải chi tiết. (Điểm hiện tại: " + score.toFixed(1) + "/10)");
+          return;
+        }
+      }
+      showSol = !showSol;
+      renderSlide();
+
+      if (showSol) {
+        setTimeout(() => {
+          const solBox = document.getElementById('solution-box');
+          if (solBox) solBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }, 150);
+      }
+    }
+
+    function showScoreModal() {
+      const score = calculateScore();
+      document.getElementById('score-val').innerText = score.toFixed(1);
+
+      const infoBox = document.getElementById('score-student-info');
+      if (studentData.name || studentData.studentClass) {
+        infoBox.innerHTML = `Thí sinh: <b>${studentData.name || 'Chưa nhập'}</b> - Lớp: <b>${studentData.studentClass || 'Chưa nhập'}</b> - SBD: <b>${studentData.sbd || 'N/A'}</b>`;
+      } else {
+        infoBox.innerHTML = `Thí sinh tự do (Chưa nhập tên trên Trang Bìa)`;
+      }
+
+      document.getElementById('score-msg').innerText = score < 3.0 && LOCK_SOLUTION ? 
+        "⚠️ Điểm số dưới 3.0. Hệ thống đã khóa Lời giải chi tiết để bạn rèn luyện lại." : "🎉 Bạn đã hoàn thành bài thi!";
+      document.getElementById('modal-score').classList.remove('hidden');
+    }
+
+    /* ========== TOÀN MÀN HÌNH THÔNG MINH CHO IPAD, IPHONE SAFARI & LAPTOP ========== */
+    function updateFullscreenUi(active) {
+      const icon = document.getElementById('icon-fullscreen');
+      const label = document.getElementById('label-fullscreen');
+      if (icon) icon.className = active ? "fa-solid fa-compress text-xs sm:text-sm" : "fa-solid fa-expand text-xs sm:text-sm";
+      if (label) label.innerText = active ? "Thu nhỏ" : "Toàn màn hình";
+    }
+
+    function toggleFullScreen() {
+      const doc = document.documentElement;
+      const canNativeFs = !!(doc.requestFullscreen || doc.webkitRequestFullscreen) &&
+                          (document.fullscreenEnabled !== false && document.webkitFullscreenEnabled !== false);
+
+      if (canNativeFs) {
+        if (!document.fullscreenElement && !document.webkitFullscreenElement) {
+          const p = doc.requestFullscreen ? doc.requestFullscreen() : doc.webkitRequestFullscreen();
+          if (p && typeof p.catch === 'function') {
+            p.catch(() => {
+              document.body.classList.toggle('ios-focus-mode');
+              updateFullscreenUi(document.body.classList.contains('ios-focus-mode'));
+            });
+          }
+        } else {
+          if (document.exitFullscreen) document.exitFullscreen();
+          else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
+        }
+      } else {
+        // Fallback chuyên biệt cho iPhone Safari / Zalo / Messenger Browser
+        const active = document.body.classList.toggle('ios-focus-mode');
+        updateFullscreenUi(active);
+        if (active) {
+          showToast("Đã bật chế độ Tập trung tràn màn hình!");
+        }
+      }
+    }
+
+    document.addEventListener('fullscreenchange', () => updateFullscreenUi(!!document.fullscreenElement));
+    document.addEventListener('webkitfullscreenchange', () => updateFullscreenUi(!!document.webkitFullscreenElement));
+
+    /* ========== LIGHTBOX PHÓNG TO HÌNH VẼ & BIỂU ĐỒ TRÊN IPHONE / IPAD ========== */
+    let currentFigureZoom = 1.0;
+
+    function openFigureZoom(containerEl) {
+      const svgEl = containerEl.querySelector('svg');
+      if (!svgEl) return;
+      const zoomContent = document.getElementById('figure-zoom-content');
+      zoomContent.innerHTML = '';
+      const cloned = svgEl.cloneNode(true);
+      cloned.style.maxWidth = '92vw';
+      cloned.style.width = 'min(92vw, 680px)';
+      cloned.style.height = 'auto';
+      zoomContent.appendChild(cloned);
+      currentFigureZoom = 1.0;
+      applyFigureZoom();
+      document.getElementById('modal-figure-zoom').classList.remove('hidden');
+    }
+
+    function adjustFigureZoom(delta) {
+      currentFigureZoom = Math.min(2.75, Math.max(0.75, currentFigureZoom + delta));
+      applyFigureZoom();
+    }
+
+    function resetFigureZoom() {
+      currentFigureZoom = 1.0;
+      applyFigureZoom();
+    }
+
+    function applyFigureZoom() {
+      const zoomContent = document.getElementById('figure-zoom-content');
+      const lbl = document.getElementById('zoom-level-label');
+      if (zoomContent) zoomContent.style.transform = `scale(${currentFigureZoom})`;
+      if (lbl) lbl.innerText = Math.round(currentFigureZoom * 100) + '%';
+    }
+
+    function closeFigureZoom() {
+      document.getElementById('modal-figure-zoom').classList.add('hidden');
+    }
+
+    /* ========== CỬ CHỈ VUỐT NGANG (SWIPE) CHUYỂN CÂU MƯỢT MÀ TRÊN IPHONE & IPAD ========== */
+    (function setupTouchSwipe() {
+      const target = document.getElementById('main-content-scroll');
+      if (!target) return;
+      let startX = 0, startY = 0, startTime = 0, ignoreSwipe = false;
+
+      target.addEventListener('touchstart', function(e) {
+        if (!e.touches || e.touches.length !== 1) {
+          ignoreSwipe = true;
+          return;
+        }
+        // Bỏ qua cử chỉ vuốt nếu người dùng đang cuộn ngang bảng số liệu, công thức dài hoặc ô nhập
+        const el = e.target;
+        if (el && el.closest('input, textarea, select, .table-scroll-wrap, .immini-right, mjx-container[display="true"]')) {
+          ignoreSwipe = true;
+          return;
+        }
+        ignoreSwipe = false;
+        startX = e.touches[0].clientX;
+        startY = e.touches[0].clientY;
+        startTime = Date.now();
+      }, { passive: true });
+
+      target.addEventListener('touchend', function(e) {
+        if (ignoreSwipe || !e.changedTouches || e.changedTouches.length !== 1) return;
+        const dx = e.changedTouches[0].clientX - startX;
+        const dy = e.changedTouches[0].clientY - startY;
+        const dt = Date.now() - startTime;
+
+        if (dt < 550 && Math.abs(dx) > 68 && Math.abs(dx) > Math.abs(dy) * 1.6) {
+          if (dx < 0) nextSlide();
+          else prevSlide();
+        }
+      }, { passive: true });
+    })();
+
+    /* ========== BỘ ĐIỀU HƯỚNG BÀN PHÍM LAPTOP & IPAD MAGIC KEYBOARD ========== */
+    document.addEventListener('keydown', function(e) {
+      const activeTag = document.activeElement ? document.activeElement.tagName.toLowerCase() : '';
+      if (activeTag === 'input' || activeTag === 'textarea') return;
+
+      if (e.key === 'Escape') {
+        closeFigureZoom();
+        const drawer = document.getElementById('toc-drawer');
+        if (drawer && !drawer.classList.contains('translate-x-full')) toggleTocDrawer();
+        return;
+      }
+
+      const scrollContainer = document.getElementById('main-content-scroll');
+
+      if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        prevSlide();
+      } else if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        nextSlide();
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        if (scrollContainer) scrollContainer.scrollTop -= 100;
+      } else if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        if (scrollContainer) scrollContainer.scrollTop += 100;
+      }
+    });
+
+    if (EXAM_INFO.examName) document.getElementById('hdr-exam-title').innerText = EXAM_INFO.examName;
+    if (EXAM_INFO.school) document.getElementById('hdr-school-name').innerText = EXAM_INFO.school;
+    loadStateFromStorage();
+    updateTimerDisplay();
+    renderSlide();
+  </script>
+</body>
+</html>
